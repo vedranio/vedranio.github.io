@@ -3,16 +3,22 @@
 html {
 	font-family: Helvetica,Arial,sans-serif;
 }
+body {
+	margin: 0;
+}
 
 div {
 	/* lines for showing the grid */
 
-/*  	background-size: 100% 30px;
+  /*	background-size: 100% 30px;
   	background-image: linear-gradient(to bottom,
                                     black 0%,
-                                    transparent 3%,
-                                    transparent 100%);
-*/
+                                    transparent 5%,
+                                    transparent 50%,
+                                    red 51%,
+                                    transparent 53%,
+                                    transparent 100%);*/
+
 }
 
 .light_link {
@@ -29,7 +35,8 @@ div {
 
 .section_heading {
 
-	font-family: Roboto-Light, Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 300;
 	font-size: 40px;
 	text-align: center;
 	line-height: 30px;   
@@ -38,7 +45,8 @@ div {
 
 .section_paragraph {
 	
-	font-family: RobotoSlab-Regular, Helvetica, Arial, sans-serif;
+	font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	font-size: 20px;
 	text-align: left;
 
@@ -86,7 +94,8 @@ div {
 }
 
 #header_job_title {
-	font-family: Roboto-Light;
+	font-family: 'Roboto';
+	font-weight: 300;
 	font-size: 20px;
 	
 	margin: 0 auto -8px auto;
@@ -103,7 +112,7 @@ div {
 
 /* styling the intro block */
 #intro_block {
-	background-color: #e0e0e0;
+	background-color: #E9EAEE;
 
 	color: #404040;
 
@@ -127,9 +136,9 @@ div {
 
 /* styling the current wrap-up block */
 #wrap_up_block {
-	background-color: #323232;
+	background-color: #E9EAEE;
 
-	color: #ffffff;
+	color: #404040;
 
 	padding-top: 60px;
 	padding-bottom: 90px;
