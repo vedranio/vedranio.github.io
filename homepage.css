@@ -9,7 +9,7 @@ body {
 div {
 	/* lines for showing the grid */
 
-/*  	background-size: 100% 30px;
+  	/*background-size: 100% 30px;
   	background-image: linear-gradient(to bottom,
                                     black 0%,
                                     transparent 5%,
@@ -20,23 +20,18 @@ div {
 
 }
 
-/*@media all and (max-width: 420px) {
-  .section_paragraph {
-    font-size: 40px;
-  }
-}*/
+
+/* ----------------
+   HEADER STYLES 
+---------------- */
 
 
 /* styling the page header - the first of the fat blocks */
 #header_block {
-	width: 100%;
-
 	background-color: #3370A7;
 
 	text-align: center;
 	color: #ffffff;
-
-	padding: 60px 0px 105px 0px;
 }
 
 #header_profile_image {
@@ -58,7 +53,7 @@ div {
 }
 
 #header_job_title {
-	font-family: 'Roboto';
+	font-family: 'Roboto', Helvetica;
 	font-weight: 300;
 	font-size: 20px;
 	
@@ -74,23 +69,25 @@ div {
 
 
 
+/*-------------------------------
+  GENERAL CONTENT BLOCK STYLES 
+------------------------------- */
+
+.block {
+	width: 100%;
+	padding: 60px 0px 105px 0px;
+}
+
 /* styling the intro block */
 .dark_block {
 	background-color: #E9EAEE;
-
 	color: #404040;
-
-	padding: 60px 0px 105px 0px;
-
 }
 
 /* styling the current work block */
 .light_block {
 	background-color: #ffffff;
-
 	color: #404040;
-
-	padding: 60px 0px 105px 0px;
 }
 
 .light_link {
@@ -131,6 +128,46 @@ div {
 	max-width: 700px;
 	min-width: 300px;
 
+}
+
+.unordered_list {
+
+	font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: left;
+
+
+	/* the negative bottom margin and correspoding top padding are the trick to getting the text on the baseline */
+	margin: 0 auto -8px auto;
+  	padding-top: 8px;
+
+	line-height: 30px;
+	max-width: 700px; 
+	min-width: 300px;
+}
+
+
+
+/* -----------
+   RESPONSIVE 
+-------------- */   
+
+@media all and (max-width: 780px) {
+	/*
+		This breakpoint is chosen because my max paragraph width is 700px. The additional 80px gives me a comfortable margin
+		either side of the paragraph text. Once we start getting narrower that that, I have to start specifying the margin
+		manually and cranking up the font size. 
+	*/
+  .section_paragraph {
+    margin: 0 40px 0 40px;
+    min-width: 200px;
+  }
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
 }
 
 

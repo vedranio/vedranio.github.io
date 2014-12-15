@@ -5,11 +5,13 @@
 		<link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="homepage.css">
 		<link href='http://fonts.googleapis.com/css?family=Lobster|Roboto+Slab:300|Roboto:300' rel='stylesheet' type='text/css'>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	
 	<body>
 	
-		<div id="header_block">
+		<div id="header_block" class="block">
 
 			<!-- This is the page header containing profile image, name and title -->
 
@@ -29,11 +31,11 @@
 		
 		</div>
 
-		<div class="dark_block">
+		<div class="dark_block , block">
 			<!-- This is the section for the paragraph talking about why this page looks so basic -->
 
 			<p class="section_heading">
-				Why does this page look so shit?
+				This page is shit!
 			</p>
 
 			<p class="section_paragraph">
@@ -50,7 +52,7 @@
 		
 		</div>
 
-		<div class="light_block">
+		<div class="light_block , block">
 			
 
 			<p class="section_heading">
@@ -68,7 +70,7 @@
 		
 		</div>
 
-		<div class="dark_block">
+		<div class="dark_block , block">
 			
 
 			<p class="section_heading">
@@ -76,10 +78,16 @@
 			</p>
 
 			<p class="section_paragraph">
-				It doesn't look like much, but I've actually made a bit of progress.
+				It doesn't look like much, but I've actually made a bit of progress. Here is a list of things I've learnt and implemented so far, since the start of December 2014:
 			</p>
 			<p class="section_paragraph">
-				The whole page is now styled using CSS. I have also learnt how to use Google web fonts (easy). The biggest achievement has been setting the whole page to a 30px baseline grid, to achieve vertical rythm. Turns out, this is a bit tricky using CSS.
+				<ul class="unordered_list">
+					<li>The whole page is now styled using CSS</li>
+					<li>I have also learnt how to use Google web fonts (easy)</li>
+					<li>The biggest achievement has been setting the whole page to a 30px baseline grid, to achieve vertical rythm. Turns out, this is a bit tricky using CSS</li>
+					<li>Figured out the basics of media queries and viewports</li>
+					<li>The paragraphs now behave responsively, including padding and min margins around paragraphs</li>
+				</ul>
 			</p>
 
 		
