@@ -131,20 +131,8 @@ div {
 }
 
 .unordered_list {
-
-	font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	font-size: 20px;
-	text-align: left;
-
-
-	/* the negative bottom margin and correspoding top padding are the trick to getting the text on the baseline */
-	margin: 0 auto -8px auto;
-  	padding-top: 8px;
-
-	line-height: 30px;
-	max-width: 700px; 
-	min-width: 300px;
+	padding-left: 0px;			/* because I want the bullets to be outside in the margin */	
+	list-style-type: circle;
 }
 
 
@@ -159,11 +147,11 @@ div {
 		either side of the paragraph text. Once we start getting narrower that that, I have to start specifying the margin
 		manually and cranking up the font size. 
 	*/
-  .section_paragraph {
+  .section_paragraph, .unordered_list {
     margin: 0 40px 0 40px;
     min-width: 200px;
   }
-}
+
 
 @viewport {
   width: device-width;
