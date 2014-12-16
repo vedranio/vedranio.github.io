@@ -132,6 +132,7 @@ div {
 
 .unordered_list {
 	padding-left: 0px;			/* because I want the bullets to be outside in the margin */	
+	padding-top: 8px;
 	list-style-type: circle;
 }
 
