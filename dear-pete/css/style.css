@@ -80,16 +80,8 @@ p{
 	font-size: 14px;
 }
 
-@media (max-width: 700px) {
-	/*
-		This breakpoint is chosen because my max paragraph width is 700px. The additional 80px gives me a comfortable margin
-		either side of the paragraph text. Once we start getting narrower that that, I have to start specifying the margin
-		manually and cranking up the font size. 
-	*/
-  /*.section_paragraph, .unordered_list {
-    margin: 0 40px 0 40px;
-    min-width: 200px;
-  }*/
+/*@media (max-width: 414px) {
+	
   #clockdiv{
 	width: 320px;
 	font-family: sans-serif;
@@ -100,9 +92,4 @@ p{
 	font-size: 20px;
 	}
 
-
-	@viewport{
-	  width: device-width;
-	  zoom: 1;
-	}
-}
+}*/
