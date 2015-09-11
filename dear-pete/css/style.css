@@ -83,7 +83,7 @@ p{
 @media (max-width: 414px) {
 	
   #clockdiv{
-	width: 320px;
+	width: 'device-width';
 	font-family: sans-serif;
 	color: #ff0000;
 	display: inline-block;
