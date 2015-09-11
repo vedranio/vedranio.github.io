@@ -80,7 +80,7 @@ p{
 	font-size: 14px;
 }
 
-/*@media (max-width: 414px) {
+@media (max-width: 414px) {
 	
   #clockdiv{
 	width: 320px;
@@ -92,4 +92,4 @@ p{
 	font-size: 20px;
 	}
 
-}*/
+}
