@@ -1,0 +1,127 @@
+// @import (reference) 'theme/variables.less';
+// @import '../../node_modules/normalize.css/normalize.css';
+@import (reference) 'variables';
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: @font-weight-normal;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: inherit;
+  font-weight: @font-weight-medium;
+}
+
+p {
+  padding-bottom: 1.5em;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+
+// --- HEADSHOT 
+
+.headshot {
+  background-color: @colour-medium-gray;
+}
+
+.headshot__image {
+  background-image: url(../images/headshot.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: calc(150px + @block-padding-top); //image height + standard section padding
+  margin-left: @margin-left;
+}
+
+
+
+// --- HOME PAGE BLOCKS 
+
+.block {}
+
+.block__content {
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+  padding-top: @block-padding-top;
+  padding-bottom: @block-padding-bottom;
+  max-width: 500px;
+}
+
+.block__image{
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+
+.block__image--credit-card{
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/placeholder.png);
+    position: relative;
+}
+
+.block--dark {
+  color: @colour-white;
+  background-color: @colour-almost-black;
+}
+
+.block--light {
+  color: @colour-almost-black;
+  background-color: @colour-white;
+}
+
+
+.block__sub-heading-on-image {
+  position: absolute;
+  left: @margin-left;
+  top: 1.5em;
+  color: @colour-white;
+}
+
+
+// --- GENERAL TYPOGRAPHY
+
+.section-heading{
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.sub-heading{
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.link {
+  text-decoration: none;
+  padding-bottom: 1.5em;
+  display: block;
+}
+
+.link:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.link--on-dark-bg {
+  color: @colour-white;
+  text-decoration: underline;
+}
+
+.link--on-light-bg {
+  color: @colour-link-blue;
+}
+

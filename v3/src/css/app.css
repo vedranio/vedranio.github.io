@@ -1,0 +1,91 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: inherit;
+  font-weight: 500;
+}
+p {
+  padding-bottom: 1.5em;
+  padding-top: 0;
+  margin-top: 0;
+}
+.headshot {
+  background-color: #E0E0E0;
+}
+.headshot__image {
+  background-image: url(../images/headshot.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: calc(152px);
+  margin-left: 5%;
+}
+.block__content {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  max-width: 500px;
+}
+.block__image {
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+.block__image--credit-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/placeholder.png);
+  position: relative;
+}
+.block--dark {
+  color: #ffffff;
+  background-color: #030303;
+}
+.block--light {
+  color: #030303;
+  background-color: #ffffff;
+}
+.block__sub-heading-on-image {
+  position: absolute;
+  left: 5%;
+  top: 1.5em;
+  color: #ffffff;
+}
+.section-heading {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.sub-heading {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.link {
+  text-decoration: none;
+  padding-bottom: 1.5em;
+  display: block;
+}
+.link:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+.link--on-dark-bg {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.link--on-light-bg {
+  color: #0066CC;
+}
