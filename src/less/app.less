@@ -1,0 +1,198 @@
+// @import (reference) 'theme/variables.less';
+// @import '../../node_modules/normalize.css/normalize.css';
+@import (reference) 'variables';
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: @font-weight-normal;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: inherit;
+  font-weight: @font-weight-medium;
+}
+
+p {
+  margin-top: 0;
+}
+
+// --- WIP MESSAGE BANNER
+
+.wip-message__banner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 36px;
+  background-color: @colour-white;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.wip-message__text{
+  margin-top: 0.5em;
+  margin-left: @margin-left;
+  // margin-right: @margin-right;
+  font-size: 0.65em;
+}
+
+.wip-message__link {
+  text-decoration: none;
+}
+
+
+// --- HEADSHOT 
+
+.headshot {
+  background-color: @colour-medium-gray;
+}
+
+.headshot__image {
+  background-image: url(../images/headshot.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: calc(150px + (20 * @block-padding-top)); //image height + standard section padding
+  margin-left: @margin-left;
+}
+
+
+
+// --- HOME PAGE BLOCKS 
+
+.block {}
+
+.block__content {
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+  padding-top: @block-padding-top;
+  padding-bottom: @block-padding-bottom;
+  max-width: 400px;
+}
+
+.block__image{
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+
+.block__image--credit-card{
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../images/placeholder.png);
+    position: relative;
+}
+
+
+.block--dark {
+  color: @colour-white;
+  background-color: @colour-almost-black;
+}
+
+.block--medium {
+  color: @colour-almost-black;
+  background-color: @colour-light-gray;
+}
+
+.block--light {
+  color: @colour-almost-black;
+  background-color: @colour-white;
+}
+
+.block__sub-heading-on-image {
+  position: absolute;
+  left: @margin-left;
+  top: 1.5em;
+  color: @colour-white;
+}
+
+.career-item{
+  margin-bottom: 1.5em;
+}
+
+.project{
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.project__logo{
+  max-width: @project-logo-width;
+}
+
+.project__name{
+  font-size: 1em;
+  line-height: 1em;
+  position: absolute;
+  top: 0;
+  left: calc(@project-logo-width + 20px);
+}
+
+.project__type{
+  font-size: 1em;
+  font-weight: @font-weight-normal;
+  line-height: 2em;
+  position: absolute;
+  top: 0;
+  left: calc(@project-logo-width + 20px);
+  margin-top: 2.1em;
+}
+
+.project__description{
+   padding-top: 1em;
+}
+
+
+// --- GENERAL TYPOGRAPHY
+
+.section-heading{
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.sub-heading{
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.link {
+  text-decoration: none;
+  margin-bottom: 0.75em;
+  line-height: 1.5em;
+  display: block;
+}
+
+.link:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.link--on-dark-bg {
+  color: @colour-white;
+  text-decoration: underline;
+}
+
+.link--on-light-bg {
+  color: @colour-link-blue;
+}
+
+.link--list {
+  margin-top: 0;
+  margin-bottom: 2.5em;
+}
+

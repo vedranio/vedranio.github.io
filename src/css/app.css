@@ -1,0 +1,148 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: inherit;
+  font-weight: 500;
+}
+p {
+  margin-top: 0;
+}
+.wip-message__banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 36px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.wip-message__text {
+  margin-top: 0.5em;
+  margin-left: 5%;
+  font-size: 0.65em;
+}
+.wip-message__link {
+  text-decoration: none;
+}
+.headshot {
+  background-color: #E0E0E0;
+}
+.headshot__image {
+  background-image: url(../images/headshot.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: calc(190px);
+  margin-left: 5%;
+}
+.block__content {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  max-width: 400px;
+}
+.block__image {
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+.block__image--credit-card {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/placeholder.png);
+  position: relative;
+}
+.block--dark {
+  color: #ffffff;
+  background-color: #030303;
+}
+.block--medium {
+  color: #030303;
+  background-color: #F7F7F7;
+}
+.block--light {
+  color: #030303;
+  background-color: #ffffff;
+}
+.block__sub-heading-on-image {
+  position: absolute;
+  left: 5%;
+  top: 1.5em;
+  color: #ffffff;
+}
+.career-item {
+  margin-bottom: 1.5em;
+}
+.project {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+.project__logo {
+  max-width: 81px;
+}
+.project__name {
+  font-size: 1em;
+  line-height: 1em;
+  position: absolute;
+  top: 0;
+  left: calc(101px);
+}
+.project__type {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 2em;
+  position: absolute;
+  top: 0;
+  left: calc(101px);
+  margin-top: 2.1em;
+}
+.project__description {
+  padding-top: 1em;
+}
+.section-heading {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.sub-heading {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.link {
+  text-decoration: none;
+  margin-bottom: 0.75em;
+  line-height: 1.5em;
+  display: block;
+}
+.link:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+.link--on-dark-bg {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.link--on-light-bg {
+  color: #0066CC;
+}
+.link--list {
+  margin-top: 0;
+  margin-bottom: 2.5em;
+}
