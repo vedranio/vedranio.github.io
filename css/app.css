@@ -24,22 +24,56 @@ h6 {
 p {
   margin-top: 0;
 }
-.headshot {
+.header {
   background-color: #E0E0E0;
 }
-.headshot__image {
+@media screen and (min-width: 900px) {
+  .header {
+    height: 440px;
+  }
+}
+.header__image {
   background-image: url(../images/headshot.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   padding-top: calc(190px);
   margin-left: 5%;
 }
-.about__image {
-  background-image: url(../images/vedran_speaking_at_meetup.jpg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  padding-top: calc(690px);
+@media screen and (min-width: 900px) {
+  .header__image {
+    background-image: url(../images/headshot_large.png);
+    padding-top: calc(440px);
+    display: inline-block;
+    width: 400px;
+  }
+}
+.intro {
   margin-left: none;
+  background-color: #030303;
+}
+@media screen and (min-width: 900px) {
+  .intro {
+    display: inline-block;
+    margin-left: 5%;
+    background-color: #E0E0E0;
+    vertical-align: top;
+    padding-top: calc(5em);
+  }
+}
+.intro__content {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  max-width: 400px;
+  color: #ffffff;
+  background-color: #030303;
+}
+@media screen and (min-width: 900px) {
+  .intro__content {
+    color: #030303;
+    background-color: #E0E0E0;
+  }
 }
 .block__content {
   margin-left: 5%;
@@ -48,13 +82,12 @@ p {
   padding-bottom: 1em;
   max-width: 400px;
 }
+.block__content--allow-wide {
+  max-width: 30em;
+}
 .block__image {
   background-repeat: no-repeat;
   padding-top: 200px;
-}
-.block__image--credit-card {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/placeholder.png);
-  position: relative;
 }
 .block--dark {
   color: #ffffff;
@@ -68,47 +101,14 @@ p {
   color: #030303;
   background-color: #ffffff;
 }
-.block__sub-heading-on-image {
-  position: absolute;
-  left: 5%;
-  top: 1.5em;
-  color: #ffffff;
-}
 .block--first-in-section {
   padding-top: 2em;
 }
 .block--last-in-section {
   padding-bottom: 4em;
 }
-.career-item {
-  margin-bottom: 1.5em;
-}
-.project {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 1.5em;
-}
-.project__logo {
-  max-width: 81px;
-}
-.project__name {
-  font-size: 1em;
-  line-height: 1em;
-  position: absolute;
-  top: 0;
-  left: calc(101px);
-}
-.project__type {
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 2em;
-  position: absolute;
-  top: 0;
-  left: calc(101px);
-  margin-top: 2.1em;
-}
-.project__description {
-  padding-top: 1em;
+.image--full-width {
+  max-width: 100%;
 }
 .section-heading {
   font-size: 1.5em;
@@ -117,8 +117,9 @@ p {
 }
 .sub-heading {
   font-size: 1em;
+  font-weight: 700;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 .link {
   text-decoration: none;
@@ -129,6 +130,16 @@ p {
 .link:hover {
   text-decoration: underline;
   opacity: .8;
+}
+.link__about-me {
+  color: #ffffff;
+  text-decoration: underline;
+}
+@media screen and (min-width: 900px) {
+  .link__about-me {
+    color: #0066CC;
+    text-decoration: none;
+  }
 }
 .link--on-dark-bg {
   color: #ffffff;

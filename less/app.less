@@ -28,31 +28,61 @@ p {
   margin-top: 0;
 }
 
+// --- HOME PAGE
 
 // --- HEADSHOT 
 
-.headshot {
+.header {
   background-color: @colour-medium-gray;
+
+  @media screen and (min-width: @screen-large) {
+    height: 440px; // I need to get rid of this. No idea why it's needed
+  }
 }
 
-.headshot__image {
+.header__image {
   background-image: url(../images/headshot.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   padding-top: calc(150px + (20 * @block-padding-top)); //image height + standard section padding
   margin-left: @margin-left;
+
+
+  @media screen and (min-width: @screen-large) {
+    background-image: url(../images/headshot_large.png);
+    padding-top: calc(400px + (20 * @block-padding-top)); //image height + standard section padding
+    display: inline-block;
+    width: 400px;
+  }  
 }
 
-// --- ABOUT IMAGE
-
-.about__image {
-  background-image: url(../images/vedran_speaking_at_meetup.jpg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  padding-top: calc(650px + (20 * @block-padding-top)); //image height + standard section padding
+.intro {
   margin-left: none;
+  background-color: @colour-almost-black;
+
+  @media screen and (min-width: @screen-large) {
+    display: inline-block;
+    margin-left: @margin-left;
+    background-color: @colour-medium-gray;
+    vertical-align: top;
+    padding-top: calc(2.5*@block-padding-top); //2.5 is to get the heading to align with the eyes
+  }
 }
 
+.intro__content{
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+  padding-top: @block-padding-top;
+  padding-bottom: @block-padding-bottom;
+  max-width: 400px;
+  color: @colour-white;
+  background-color: @colour-almost-black;
+
+  @media screen and (min-width: @screen-large) {
+    color: @colour-almost-black;
+    background-color: @colour-medium-gray;
+  }
+}
 
 
 // --- HOME PAGE BLOCKS 
@@ -67,21 +97,14 @@ p {
   max-width: 400px;
 }
 
+.block__content--allow-wide{
+  max-width: @max-text-width;
+}
+
 .block__image{
   background-repeat: no-repeat;
   padding-top: 200px;
 }
-
-.block__image--credit-card{
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url(../images/placeholder.png);
-    position: relative;
-}
-
 
 .block--dark {
   color: @colour-white;
@@ -98,13 +121,6 @@ p {
   background-color: @colour-white;
 }
 
-.block__sub-heading-on-image {
-  position: absolute;
-  left: @margin-left;
-  top: 1.5em;
-  color: @colour-white;
-}
-
 .block--first-in-section {
   padding-top: @block-padding-first;
 }
@@ -113,40 +129,12 @@ p {
   padding-bottom: @block-padding-last;
 }
 
-.career-item{
-  margin-bottom: 1.5em;
-}
 
-.project{
-  display: inline-block;
-  position: relative;
-  margin-bottom: 1.5em;
-}
+// --- ABOUT PAGE
 
-.project__logo{
-  max-width: @project-logo-width;
-}
 
-.project__name{
-  font-size: 1em;
-  line-height: 1em;
-  position: absolute;
-  top: 0;
-  left: calc(@project-logo-width + 20px);
-}
-
-.project__type{
-  font-size: 1em;
-  font-weight: @font-weight-normal;
-  line-height: 2em;
-  position: absolute;
-  top: 0;
-  left: calc(@project-logo-width + 20px);
-  margin-top: 2.1em;
-}
-
-.project__description{
-   padding-top: 1em;
+.image--full-width {
+  max-width: 100%;
 }
 
 
@@ -160,8 +148,9 @@ p {
 
 .sub-heading{
   font-size: 1em;
+  font-weight: @font-weight-bold;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .link {
@@ -174,6 +163,16 @@ p {
 .link:hover {
   text-decoration: underline;
   opacity: .8;
+}
+
+.link__about-me {
+  color: @colour-white;
+  text-decoration: underline;
+
+  @media screen and (min-width: @screen-large) {
+    color: @colour-link-blue;
+    text-decoration: none;
+  }
 }
 
 .link--on-dark-bg {
