@@ -24,24 +24,6 @@ h6 {
 p {
   margin-top: 0;
 }
-.wip-message__banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
-  height: 36px;
-  background-color: #ffffff;
-  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.wip-message__text {
-  margin-top: 0.5em;
-  margin-left: 5%;
-  font-size: 0.65em;
-}
-.wip-message__link {
-  text-decoration: none;
-}
 .headshot {
   background-color: #E0E0E0;
 }
@@ -52,11 +34,18 @@ p {
   padding-top: calc(190px);
   margin-left: 5%;
 }
+.about__image {
+  background-image: url(../images/vedran_speaking_at_meetup.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding-top: calc(690px);
+  margin-left: none;
+}
 .block__content {
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 2em;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
   max-width: 400px;
 }
 .block__image {
@@ -84,6 +73,12 @@ p {
   left: 5%;
   top: 1.5em;
   color: #ffffff;
+}
+.block--first-in-section {
+  padding-top: 2em;
+}
+.block--last-in-section {
+  padding-bottom: 4em;
 }
 .career-item {
   margin-bottom: 1.5em;
@@ -145,4 +140,7 @@ p {
 .link--list {
   margin-top: 0;
   margin-bottom: 2.5em;
+}
+.link--inline {
+  display: inline;
 }
