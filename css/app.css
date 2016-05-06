@@ -122,6 +122,28 @@ p {
 .image--full-width {
   max-width: 100%;
 }
+.my-work-item {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+.my-work-item__image {
+  display: inline-block;
+  padding-top: 1em;
+  vertical-align: top;
+  max-width: 15em;
+}
+.my-work-item__description {
+  display: inline-block;
+  max-width: 18em;
+  padding-top: 2em;
+  vertical-align: top;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item__description {
+    padding-left: 2em;
+    padding-top: 1em;
+  }
+}
 .footer {
   min-height: 10em;
 }
