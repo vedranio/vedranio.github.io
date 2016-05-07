@@ -23,6 +23,7 @@ h6 {
 }
 p {
   margin-top: 0;
+  max-width: 35em;
 }
 .header {
   background-color: #E0E0E0;
@@ -30,6 +31,15 @@ p {
 @media screen and (min-width: 900px) {
   .header {
     height: 440px;
+  }
+}
+.header__content {
+  max-width: 100%;
+}
+@media screen and (min-width: 900px) {
+  .header__content {
+    max-width: 900px;
+    margin: auto;
   }
 }
 .header__image {
@@ -45,29 +55,28 @@ p {
     padding-top: calc(440px);
     display: inline-block;
     width: 400px;
+    margin-left: 0;
   }
 }
 .intro {
-  margin-left: none;
   background-color: #030303;
 }
 @media screen and (min-width: 900px) {
   .intro {
     display: inline-block;
-    margin-left: 5%;
     background-color: #E0E0E0;
     vertical-align: top;
     padding-top: calc(5em);
+    margin-left: 40px;
   }
 }
 .intro__content {
-  margin-left: 5%;
-  margin-right: 5%;
   padding-top: 2em;
   padding-bottom: 1em;
   max-width: 400px;
   color: #ffffff;
-  background-color: #030303;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 @media screen and (min-width: 900px) {
   .intro__content {
@@ -76,14 +85,17 @@ p {
   }
 }
 .section__content {
-  margin-left: 5%;
-  margin-right: 5%;
   padding-top: 2em;
   padding-bottom: 1em;
-  max-width: 400px;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-.section__content--allow-wide {
-  max-width: 35em;
+@media screen and (min-width: 900px) {
+  .section__content {
+    max-width: 900px;
+    margin: auto;
+  }
 }
 .section__image {
   background-repeat: no-repeat;
@@ -102,22 +114,32 @@ p {
   background-color: #ffffff;
 }
 .section--first-in-section {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 .section--last-in-section {
   padding-bottom: 4em;
 }
 .sub-section__content {
-  margin-left: 5%;
-  margin-right: 5%;
   padding-top: 1em;
   padding-bottom: 0em;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 900px) {
+  .sub-section__content {
+    max-width: 900px;
+    margin: auto;
+  }
 }
 .sub-section--first-in-section {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 .sub-section--last-in-section {
   padding-bottom: 4em;
+}
+.paragraph__home {
+  max-width: 400px;
 }
 .image--full-width {
   max-width: 100%;

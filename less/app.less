@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
+  max-width: @max-text-width;
 }
 
 // --- HOME PAGE
@@ -40,6 +41,16 @@ p {
   }
 }
 
+.header__content {
+
+  max-width: 100%;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto; 
+  }
+}
+
 .header__image {
   background-image: url(../images/headshot.png);
   background-repeat: no-repeat;
@@ -50,33 +61,32 @@ p {
 
   @media screen and (min-width: @screen-large) {
     background-image: url(../images/headshot_large.png);
-    padding-top: calc(400px + (20 * @section-padding-top)); //image height + standard section padding
+    padding-top: calc(@block-width + (20 * @section-padding-top)); //image height + standard section padding
     display: inline-block;
-    width: 400px;
+    width: @block-width;
+    margin-left: 0;
   }  
 }
 
 .intro {
-  margin-left: none;
   background-color: @colour-almost-black;
 
   @media screen and (min-width: @screen-large) {
     display: inline-block;
-    margin-left: @margin-left;
     background-color: @colour-medium-gray;
     vertical-align: top;
     padding-top: calc(2.5*@section-padding-top); //2.5 is to get the heading to align with the eyes
+    margin-left: 40px;
   }
 }
 
 .intro__content{
-  margin-left: @margin-left;
-  margin-right: @margin-right;
   padding-top: @section-padding-top;
   padding-bottom: @section-padding-bottom;
-  max-width: 400px;
+  max-width: @block-width;
   color: @colour-white;
-  background-color: @colour-almost-black;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
 
   @media screen and (min-width: @screen-large) {
     color: @colour-almost-black;
@@ -90,16 +100,21 @@ p {
 .section {}
 
 .section__content {
-  margin-left: @margin-left;
-  margin-right: @margin-right;
+  
   padding-top: @section-padding-top;
   padding-bottom: @section-padding-bottom;
-  max-width: 400px;
+
+  max-width: 100%;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto;
+  }
+
 }
 
-.section__content--allow-wide{
-  max-width: @max-text-width;
-}
 
 .section__image{
   background-repeat: no-repeat;
@@ -133,10 +148,20 @@ p {
 .sub-section {}
 
 .sub-section__content {
-  margin-left: @margin-left;
-  margin-right: @margin-right;
+
   padding-top: @sub-section-padding-top;
   padding-bottom: @sub-section-padding-bottom;
+  
+  max-width: 100%;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto; 
+  }
+  
+  
 }
 
 .sub-section--first-in-section {
@@ -145,6 +170,10 @@ p {
 
 .sub-section--last-in-section {
   padding-bottom: @sub-section-padding-last;
+}
+
+.paragraph__home {
+  max-width: @block-width;
 }
 
 
