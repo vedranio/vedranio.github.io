@@ -50,8 +50,11 @@ p {
 .nav__item a {
   text-decoration: none;
   color: @colour-almost-black;
-  // display: block;
-  padding: 1em 1em;
+  padding: 1em 0.6em;
+
+  @media screen and (min-width: @screen-large) {
+    padding: 1em 1em;
+  }
 }
 
 .nav__item:first-child a {
