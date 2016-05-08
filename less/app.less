@@ -29,6 +29,53 @@ p {
   max-width: @max-text-width;
 }
 
+// --- NAV
+.nav {
+  background-color: @colour-medium-gray;
+  padding: 2em 2em 6em 0em;
+
+}
+
+.nav__list {
+  list-style: none;
+  margin-left: @margin-left;
+  padding: 0;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto; 
+  }
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: @colour-almost-black;
+  // display: block;
+  padding: 1em 1em;
+}
+
+.nav__item:first-child a {
+  padding-left: 0;
+  font-weight: @font-weight-bold;
+}
+
+.nav__item a:hover {
+  text-decoration: underline;
+}
+
+.nav__item--selected {
+  font-weight: @font-weight-bold;
+}
+
+.nav__item {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1em;
+  font-weight: @font-weight-normal;
+  display: inline;
+  
+}
+
+
 // --- HOME PAGE
 
 // --- HEADSHOT 
