@@ -32,12 +32,21 @@ p {
 // --- NAV
 .nav {
   background-color: @colour-medium-gray;
-  padding: 2em 2em 6em 0em;
+  padding: 2em 0em 6em 0em;
 
+  @media screen and (min-width: @screen-large) {
+    padding: 2em 2em 4em 2em;
+  }
 }
 
 .nav--on-white-bg {
   background-color: @colour-white;
+}
+
+.nav--extra-height {
+  @media screen and (min-width: @screen-large) {
+    padding-bottom: 6em;
+  }
 }
 
 .nav__list {
@@ -129,7 +138,7 @@ p {
     background-color: @colour-medium-gray;
     vertical-align: top;
     padding-top: calc(2.5*@section-padding-top); //2.5 is to get the heading to align with the eyes
-    margin-left: 40px;
+    margin-left: 2em;
   }
 }
 
