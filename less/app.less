@@ -36,6 +36,10 @@ p {
 
 }
 
+.nav--on-white-bg {
+  background-color: @colour-white;
+}
+
 .nav__list {
   list-style: none;
   margin-left: @margin-left;
@@ -59,14 +63,13 @@ p {
 
 .nav__item:first-child a {
   padding-left: 0;
-  font-weight: @font-weight-bold;
 }
 
 .nav__item a:hover {
   text-decoration: underline;
 }
 
-.nav__item--selected {
+.nav__item--selected a {
   font-weight: @font-weight-bold;
 }
 

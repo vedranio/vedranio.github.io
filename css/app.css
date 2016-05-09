@@ -29,6 +29,9 @@ p {
   background-color: #E0E0E0;
   padding: 2em 2em 6em 0em;
 }
+.nav--on-white-bg {
+  background-color: #ffffff;
+}
 .nav__list {
   list-style: none;
   margin-left: 5%;
@@ -52,12 +55,11 @@ p {
 }
 .nav__item:first-child a {
   padding-left: 0;
-  font-weight: 700;
 }
 .nav__item a:hover {
   text-decoration: underline;
 }
-.nav__item--selected {
+.nav__item--selected a {
   font-weight: 700;
 }
 .nav__item {
