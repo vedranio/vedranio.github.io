@@ -32,7 +32,7 @@ p {
 // --- NAV
 .nav {
   background-color: @colour-medium-gray;
-  padding: 2em 0em 6em 0em;
+  padding: 0.1em 0em 2em 0em;
 
   @media screen and (min-width: @screen-large) {
     padding: 2em 2em 4em 2em;
@@ -44,9 +44,7 @@ p {
 }
 
 .nav--extra-height {
-  @media screen and (min-width: @screen-large) {
     padding-bottom: 6em;
-  }
 }
 
 .nav__list {
@@ -199,11 +197,21 @@ p {
 }
 
 .section--first-in-section {
-  padding-top: @section-padding-first;
+  
+  padding-top: calc(@section-padding-first/2);
+
+  @media screen and (min-width: @screen-large) {
+    padding-top: @section-padding-first;
+  }
 }
 
 .section--last-in-section {
-  padding-bottom: @section-padding-last;
+
+  padding-bottom: calc(@section-padding-last/2);
+
+  @media screen and (min-width: @screen-large) {
+    padding-bottom: @section-padding-last;
+  }
 }
 
 
