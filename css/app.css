@@ -181,6 +181,10 @@ p {
     padding-bottom: 4em;
   }
 }
+.section--on-top {
+  z-index: 99;
+  position: relative;
+}
 .sub-section__content {
   padding-top: 1em;
   padding-bottom: 0em;
@@ -211,8 +215,8 @@ p {
   padding-bottom: 4em;
 }
 .my-work-item--with-ipad {
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   max-width: 100%;
   margin-left: 5%;
   margin-right: 5%;
@@ -221,44 +225,22 @@ p {
   .my-work-item--with-ipad {
     max-width: 900px;
     margin: auto;
+    padding-top: 8em;
+    padding-bottom: 10em;
   }
-}
-.my-work-item--with-desktop-browser {
-  padding-top: 10em;
-  padding-bottom: 0;
-  max-width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-@media screen and (min-width: 900px) {
-  .my-work-item--with-desktop-browser {
-    max-width: 900px;
-    margin: auto;
-  }
-}
-.my-work-item__image--browser-centred {
-  max-width: 60em;
-  display: block;
-  margin-top: 4em;
-  margin-left: -2.5em;
-}
-.my-work-item__image {
-  display: inline-block;
-  padding-top: 1em;
-  vertical-align: top;
-  max-width: 15em;
-}
-.my-work-item--with-full-width-image {
-  padding: 0;
-  width: 100%;
-  height: 50em;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/rubicon_design_workshop_2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .my-work-item__image--ipad {
+  width: 100%;
   max-width: 24em;
   display: inline-block;
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+}
+@media screen and (min-width: 900px) {
+  .my-work-item__image--ipad {
+    -webkit-filter: drop-shadow(10px 15px 20px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(10px 15px 20px rgba(0, 0, 0, 0.3));
+  }
 }
 .my-work-item__description--ipad {
   display: inline-block;
@@ -272,8 +254,56 @@ p {
     padding-top: 0;
   }
 }
+.my-work-item--with-desktop-browser {
+  padding-top: 3em;
+  padding-bottom: 0;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item--with-desktop-browser {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 8em;
+  }
+}
+.my-work-item__image--browser-centred {
+  width: 100%;
+  max-width: 65em;
+  display: block;
+  margin-top: 1em;
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+}
+@media screen and (min-width: 900px) {
+  .my-work-item__image--browser-centred {
+    margin-top: 4em;
+    -webkit-filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
+  }
+}
+.my-work-item__image {
+  display: inline-block;
+  padding-top: 1em;
+  vertical-align: top;
+  max-width: 15em;
+}
+.my-work-item--with-full-width-image {
+  padding: 0;
+  width: 100%;
+  height: 40em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/rubicon_design_workshop_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item--with-full-width-image {
+    height: 50em;
+  }
+}
 .my-work-item__description--full-width-image {
-  padding-top: 10em;
+  padding-top: 3em;
   padding-bottom: 0;
   max-width: 100%;
   margin-left: 5%;
@@ -283,6 +313,7 @@ p {
   .my-work-item__description--full-width-image {
     max-width: 900px;
     margin: auto;
+    padding-top: 8em;
   }
 }
 .footer {
