@@ -14,7 +14,7 @@ body {
   position: relative;
   font-size: @font-base-size;
   line-height: 1.5em;
-  font-weight: @font-weight-normal;
+  font-weight: @font-weight-thin;
   margin: 0px;
 }
 
@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   max-width: @max-text-width;
+  font-weight: @font-weight-thin;
 }
 
 // --- NAV
@@ -230,9 +231,8 @@ p {
     max-width: @screen-large;
     margin: auto; 
   }
-  
-  
 }
+
 
 .sub-section--first-in-section {
   padding-top: @sub-section-padding-first;
@@ -247,12 +247,14 @@ p {
 }
 
 
-// --- ABOUT
+// --- IMAGES
 
 
 .image--full-width {
   max-width: 100%;
 }
+
+
 
 // --- MY WORK 
 
@@ -263,6 +265,43 @@ p {
   padding-bottom: 4em;
 }
 
+.my-work-item--with-ipad {
+
+  padding-top: 10em;
+  padding-bottom: 10em;
+  
+  max-width: 100%;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto; 
+  }
+}
+
+.my-work-item--with-desktop-browser {
+
+  padding-top: 10em;
+  padding-bottom: 0;
+  
+  max-width: 100%;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto; 
+  }
+}
+
+.my-work-item__image--browser-centred {
+  max-width: 60em;
+  display: block; 
+  margin-top: 4em;
+  margin-left: -2.5em;
+}
+
 .my-work-item__image {
   display: inline-block;
   padding-top: 1em;
@@ -270,17 +309,55 @@ p {
   max-width: 15em;
 }
 
-.my-work-item__description {
+.my-work-item--with-full-width-image {
+  padding: 0;
+
+  width: 100%;
+  height: 50em;
+
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+  url(/images/rubicon_design_workshop_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.my-work-item__image--ipad {
+  max-width: 24em;
+  display: inline-block; 
+}
+
+.my-work-item__description--ipad {
   display: inline-block;
   max-width: 18em;
   padding-top: 2em;
   vertical-align: top;
 
   @media screen and (min-width: @screen-large) {
-    padding-left: 2em;
-    padding-top: 1em;
+    padding-left: 4em;
+    padding-top: 0;
   }
 }
+
+.my-work-item__description--full-width-image {
+  padding-top: 10em;
+  padding-bottom: 0;
+  
+  max-width: 100%;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto; 
+  }
+}
+
+
 
 
 // --- FOOTER
@@ -303,6 +380,7 @@ p {
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 1em;
+  line-height: 1.5em;
 }
 
 .sub-heading{
@@ -357,5 +435,9 @@ p {
 
 .link--inline{
   display: inline;
+}
+
+.text--on-dark-bg {
+  color: @colour-white;
 }
 

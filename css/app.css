@@ -8,7 +8,7 @@ body {
   position: relative;
   font-size: 18px;
   line-height: 1.5em;
-  font-weight: 400;
+  font-weight: 100;
   margin: 0px;
 }
 h1,
@@ -24,6 +24,7 @@ h6 {
 p {
   margin-top: 0;
   max-width: 35em;
+  font-weight: 100;
 }
 .nav {
   background-color: #E0E0E0;
@@ -209,22 +210,79 @@ p {
   padding-top: 2em;
   padding-bottom: 4em;
 }
+.my-work-item--with-ipad {
+  padding-top: 10em;
+  padding-bottom: 10em;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item--with-ipad {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+.my-work-item--with-desktop-browser {
+  padding-top: 10em;
+  padding-bottom: 0;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item--with-desktop-browser {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+.my-work-item__image--browser-centred {
+  max-width: 60em;
+  display: block;
+  margin-top: 4em;
+  margin-left: -2.5em;
+}
 .my-work-item__image {
   display: inline-block;
   padding-top: 1em;
   vertical-align: top;
   max-width: 15em;
 }
-.my-work-item__description {
+.my-work-item--with-full-width-image {
+  padding: 0;
+  width: 100%;
+  height: 50em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/rubicon_design_workshop_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.my-work-item__image--ipad {
+  max-width: 24em;
+  display: inline-block;
+}
+.my-work-item__description--ipad {
   display: inline-block;
   max-width: 18em;
   padding-top: 2em;
   vertical-align: top;
 }
 @media screen and (min-width: 900px) {
-  .my-work-item__description {
-    padding-left: 2em;
-    padding-top: 1em;
+  .my-work-item__description--ipad {
+    padding-left: 4em;
+    padding-top: 0;
+  }
+}
+.my-work-item__description--full-width-image {
+  padding-top: 10em;
+  padding-bottom: 0;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item__description--full-width-image {
+    max-width: 900px;
+    margin: auto;
   }
 }
 .footer {
@@ -239,6 +297,7 @@ p {
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 1em;
+  line-height: 1.5em;
 }
 .sub-heading {
   font-size: 1.1em;
@@ -285,4 +344,7 @@ p {
 }
 .link--inline {
   display: inline;
+}
+.text--on-dark-bg {
+  color: #ffffff;
 }
