@@ -44,6 +44,10 @@ p {
   background-color: @colour-white;
 }
 
+.nav--on-light-bg {
+  background-color: @colour-light-gray;
+}
+
 .nav--extra-height {
     padding-bottom: 6em;
 }
@@ -315,6 +319,19 @@ p {
   }
 }
 
+.section-heading__with-ipad--side-by-side {
+  @media screen and (max-width: @screen-large) {
+    display: none;
+  }
+}
+
+.section-heading__with-ipad--vertically-stacked {
+  padding-bottom: 1em;
+  @media screen and (min-width: @screen-large) {
+    display: none;
+  }
+}
+
 // a section with a desktop browser
 
 .my-work-item--with-desktop-browser {
@@ -337,7 +354,7 @@ p {
   width: 100%;
   max-width: 65em;
   display: block; 
-  margin-top: 1em;
+  margin-top: 3em;
 
   -webkit-filter: drop-shadow(3px 3px 5px @colour-shadow);
   filter: drop-shadow(3px 3px 5px @colour-shadow);
@@ -396,6 +413,13 @@ p {
   }
 }
 
+// --- CASE STUDY
+
+.animation-example {
+  width: 100%;
+  // max-width: 24em;
+  display: inline-block;
+} 
 
 // --- FOOTER
 
@@ -409,6 +433,7 @@ p {
     padding-top: 4em;
   }
 }
+
 
 
 // --- GENERAL TYPOGRAPHY
@@ -476,5 +501,24 @@ p {
 
 .text--on-dark-bg {
   color: @colour-white;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list__item {
+  margin-left: -0.8em;
+  list-style-position: inside;
+  text-indent: -0.8em;
+  padding-left: 1em;
+  max-width: @max-text-width;
+}
+
+// this is to get the mid dot character as the bullet
+.list__item:before {
+    content:'\00B7';  //code for mid dot character
+    padding-right: 0.5em;
 }
 
