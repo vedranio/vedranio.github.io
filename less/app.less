@@ -318,7 +318,12 @@ p {
   -webkit-filter: drop-shadow(3px 3px 5px @colour-shadow);
   filter: drop-shadow(3px 3px 5px @colour-shadow);
 
+  // Medium devices
+  @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+    max-width: 15em;
+  }
 
+  // Large devices
   @media screen and (min-width: @screen-large) {
     -webkit-filter: drop-shadow(10px 15px 20px @colour-shadow);
     filter: drop-shadow(10px 15px 20px @colour-shadow);
@@ -331,6 +336,13 @@ p {
   padding-top: 2em;
   vertical-align: top;
 
+  // Medium devices
+  @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+    padding-left: 2em;
+    padding-top: 0;
+  }
+
+  // Large devices
   @media screen and (min-width: @screen-large) {
     padding-left: 4em;
     padding-top: 0;
@@ -339,14 +351,17 @@ p {
 
 .h2-heading__with-ipad--side-by-side {
 
-  @media screen and (max-width: @screen-large) {
+  @media screen and (max-width: @screen-medium) {
     display: none;
   }
 }
 
 .h2-heading__with-ipad--vertically-stacked {
   padding-bottom: 1em;
-  @media screen and (min-width: @screen-large) {
+
+
+
+  @media screen and (min-width: @screen-medium) {
     display: none;
   }
 }
