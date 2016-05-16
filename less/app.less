@@ -332,7 +332,6 @@ p {
 
 .my-work-item__description--ipad {
   display: inline-block;
-  max-width: 18em;
   padding-top: 2em;
   vertical-align: top;
 
@@ -340,12 +339,14 @@ p {
   @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
     padding-left: 2em;
     padding-top: 0;
+    max-width: 18em;
   }
 
   // Large devices
   @media screen and (min-width: @screen-large) {
     padding-left: 4em;
     padding-top: 0;
+    max-width: 18em;
   }
 }
 
@@ -464,7 +465,7 @@ p {
 
 .footer__content {
 
-  @media screen and (min-width: @screen-large) {
+  @media screen and (min-width: @screen-medium) {
     padding-top: 4em;
   }
 }
@@ -531,7 +532,7 @@ p {
 }
 
 .link__footer{
-  @media screen and (min-width: @screen-large) {
+  @media screen and (min-width: @screen-medium) {
     display: inline;
     padding-right: 2em;
   }

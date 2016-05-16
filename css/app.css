@@ -260,7 +260,6 @@ p {
 }
 .my-work-item__description--ipad {
   display: inline-block;
-  max-width: 18em;
   padding-top: 2em;
   vertical-align: top;
 }
@@ -268,12 +267,14 @@ p {
   .my-work-item__description--ipad {
     padding-left: 2em;
     padding-top: 0;
+    max-width: 18em;
   }
 }
 @media screen and (min-width: 900px) {
   .my-work-item__description--ipad {
     padding-left: 4em;
     padding-top: 0;
+    max-width: 18em;
   }
 }
 @media screen and (max-width: 700px) {
@@ -360,7 +361,7 @@ p {
 .footer {
   min-height: 10em;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .footer__content {
     padding-top: 4em;
   }
@@ -414,7 +415,7 @@ p {
   margin-top: 0;
   margin-bottom: 2.5em;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .link__footer {
     display: inline;
     padding-right: 2em;
