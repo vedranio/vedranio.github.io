@@ -101,7 +101,7 @@ p {
 .header {
   background-color: @colour-medium-gray;
 
-  @media screen and (min-width: @screen-large) {
+  @media screen and (min-width: @screen-medium) {
     height: 440px; // I need to get rid of this. No idea why it's needed
   }
 }
@@ -110,6 +110,13 @@ p {
 
   max-width: 100%;
 
+  // Medium devices
+  @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+    max-width: @screen-medium;
+    margin: auto; 
+  }
+
+  // Large devices
   @media screen and (min-width: @screen-large) {
     max-width: @screen-large;
     margin: auto; 
@@ -124,6 +131,17 @@ p {
   margin-left: @margin-left;
 
 
+  // Medium devices
+  @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+    background-image: url(../images/headshot_large.png);
+    padding-top: calc(@block-width + (20 * @section-padding-top)); //image height + standard section padding
+    display: inline-block;
+    width: 300px;
+    background-size: contain;
+    margin-left: 0;
+  }
+
+  // Large screen
   @media screen and (min-width: @screen-large) {
     background-image: url(../images/headshot_large.png);
     padding-top: calc(@block-width + (20 * @section-padding-top)); //image height + standard section padding
@@ -135,6 +153,16 @@ p {
 
 .intro {
   background-color: @colour-almost-black;
+
+  // Medium devices
+  @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+    display: inline-block;
+    background-color: @colour-medium-gray;
+    vertical-align: top;
+    padding-top: calc(4*@section-padding-top); //4 is to get the heading to align with the eyes
+    margin-left: 0.5em;
+    max-width: 380px;
+  }
 
   @media screen and (min-width: @screen-large) {
     display: inline-block;
@@ -153,9 +181,12 @@ p {
   margin-left: @margin-left;
   margin-right: @margin-right;
 
-  @media screen and (min-width: @screen-large) {
+  // Medium devices and larger
+  @media screen and (min-width: @screen-medium){
     color: @colour-almost-black;
     background-color: @colour-medium-gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -301,13 +332,6 @@ p {
     padding-top: 8em;
     padding-bottom: 10em;
   }
-
-  // @media screen and (min-width: @screen-medium) {
-  //   max-width: @screen-medium;
-  //   margin: auto; 
-  //   padding-top: 8em;
-  //   padding-bottom: 10em;
-  // }
 }
 
 .my-work-item__image--ipad {
@@ -511,7 +535,7 @@ p {
   color: @colour-white;
   text-decoration: underline;
 
-  @media screen and (min-width: @screen-large) {
+  @media screen and (min-width: @screen-medium) {
     color: @colour-link-blue;
     text-decoration: none;
   }

@@ -83,13 +83,19 @@ p {
 .header {
   background-color: #E0E0E0;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .header {
     height: 440px;
   }
 }
 .header__content {
   max-width: 100%;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .header__content {
+    max-width: 700px;
+    margin: auto;
+  }
 }
 @media screen and (min-width: 900px) {
   .header__content {
@@ -104,6 +110,16 @@ p {
   padding-top: calc(190px);
   margin-left: 5%;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .header__image {
+    background-image: url(../images/headshot_large.png);
+    padding-top: calc(440px);
+    display: inline-block;
+    width: 300px;
+    background-size: contain;
+    margin-left: 0;
+  }
+}
 @media screen and (min-width: 900px) {
   .header__image {
     background-image: url(../images/headshot_large.png);
@@ -115,6 +131,16 @@ p {
 }
 .intro {
   background-color: #030303;
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .intro {
+    display: inline-block;
+    background-color: #E0E0E0;
+    vertical-align: top;
+    padding-top: calc(8em);
+    margin-left: 0.5em;
+    max-width: 380px;
+  }
 }
 @media screen and (min-width: 900px) {
   .intro {
@@ -133,10 +159,12 @@ p {
   margin-left: 5%;
   margin-right: 5%;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .intro__content {
     color: #030303;
     background-color: #E0E0E0;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .section__content {
@@ -398,7 +426,7 @@ p {
   color: #ffffff;
   text-decoration: underline;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .link__about-me {
     color: #0066CC;
     text-decoration: none;
