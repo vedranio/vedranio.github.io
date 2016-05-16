@@ -265,7 +265,7 @@ p {
     padding-top: 0;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   .h2-heading__with-ipad--side-by-side {
     display: none;
   }
