@@ -302,6 +302,7 @@ p {
   width: 100%;
   max-width: @max-text-width;
   display: inline-block;
+  margin-bottom: 2em;
 }
 
 
@@ -434,7 +435,7 @@ p {
 
 // a section with a full width image
 
-.my-work-item--with-full-width-image {
+.my-work-item_full-width-image--rubicon {
   padding: 0;
 
   width: 100%;
@@ -446,6 +447,27 @@ p {
       rgba(0, 0, 0, 0.7)
     ),
   url(/images/rubicon_design_workshop_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  @media screen and (min-width: @screen-large) {
+    height: 50em;
+  }
+
+}
+
+.my-work-item_full-width-image--kolektiv {
+  padding: 0;
+
+  width: 100%;
+  height: 40em;
+
+  background: 
+  linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+  url(/images/watching_usability_testing_summary_video.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -514,7 +536,7 @@ p {
 
 .h3-heading{
   font-size: 1.1em;
-  margin-top: 0;
+  margin-top: 2em;
   margin-bottom: 0.75em;
   max-width: @max-text-width;
 }
