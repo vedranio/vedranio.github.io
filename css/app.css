@@ -250,6 +250,12 @@ p {
   display: inline-block;
   margin-bottom: 2em;
 }
+.image--small {
+  width: 100%;
+  max-width: calc(315px);
+  display: inline-block;
+  margin-bottom: 2em;
+}
 .my-work-item {
   padding-top: 2em;
   padding-bottom: 4em;
