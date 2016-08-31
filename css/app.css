@@ -243,6 +243,7 @@ p {
 }
 .image--full-width {
   max-width: 100%;
+  display: block;
 }
 .image--medium {
   width: 100%;
@@ -399,6 +400,30 @@ p {
     margin: auto;
     padding-top: 8em;
   }
+}
+.my-work-item--side-projects {
+  padding-top: 3em;
+  padding-bottom: 10em;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item--side-projects {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 8em;
+  }
+}
+.my-work-item__image--side-projects-container {
+  font-size: 0;
+}
+.my-work-item__image--side-project-link {
+  max-width: calc(225px);
+  position: relative;
+}
+.my-work-item__image--side-project-link:hover {
+  opacity: 0.5;
 }
 .animation-example {
   width: 100%;

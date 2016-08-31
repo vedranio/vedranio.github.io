@@ -296,6 +296,7 @@ p {
 
 .image--full-width {
   max-width: 100%;
+  display: block;
 }
 
 .image--medium {
@@ -500,6 +501,36 @@ p {
     padding-top: 8em;
   }
 }
+
+.my-work-item--side-projects {
+
+  padding-top: 3em;
+  padding-bottom: 10em;
+  
+  max-width: 100%;
+  margin-left: @margin-left;
+  margin-right: @margin-right;
+
+  @media screen and (min-width: @screen-large) {
+    max-width: @screen-large;
+    margin: auto; 
+    padding-top: 8em;
+  }
+}
+
+.my-work-item__image--side-projects-container {
+  font-size: 0; //needed to remove the gap between images.
+}
+
+.my-work-item__image--side-project-link {
+  max-width: calc(@screen-large/4);
+  position: relative;
+}
+
+.my-work-item__image--side-project-link:hover{
+    opacity:0.5;
+}
+
 
 // --- CASE STUDY
 
