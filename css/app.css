@@ -417,13 +417,40 @@ p {
 }
 .my-work-item__image--side-projects-container {
   font-size: 0;
+  position: relative;
+}
+.my-work-item__side-project {
+  position: relative;
+  max-width: calc(225px);
+  display: inline-block;
+}
+.my-work-item__side-project:hover span.side-project-name {
+  opacity: 1;
 }
 .my-work-item__image--side-project-link {
   max-width: calc(225px);
   position: relative;
 }
 .my-work-item__image--side-project-link:hover {
-  opacity: 0.5;
+  opacity: 1;
+}
+span.side-project-name {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: calc(225px);
+  width: 100%;
+  opacity: 0;
+  font-size: 18px;
+}
+span.side-project-name span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 .animation-example {
   width: 100%;
