@@ -257,6 +257,9 @@ p {
   display: inline-block;
   margin-bottom: 2em;
 }
+.image--with-caption {
+  margin-bottom: 0;
+}
 .my-work-item {
   padding-top: 2em;
   padding-bottom: 4em;
@@ -571,4 +574,10 @@ span.side-project-name span {
 .list__item:before {
   content: '\00B7';
   padding-right: 0.5em;
+}
+.image-caption {
+  color: #747474;
+  font-size: 0.75em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
 }
