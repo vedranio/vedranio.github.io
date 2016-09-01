@@ -502,6 +502,8 @@ p {
   }
 }
 
+// SIDE PROJECTS SECTION
+
 .my-work-item--side-projects {
 
   padding-top: 3em;
@@ -518,19 +520,36 @@ p {
   }
 }
 
-.my-work-item__image--side-projects-container {
-  font-size: 0; //needed to remove the gap between images.
+.my-work-item--side-projects-container {
+  font-size: 0; //needed to remove the gap between images. 
+                // Because of this, the sizes at this level and below must be in px, not em
   position: relative;
+  padding-top: 72px;
+
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
 }
 
-// .my-work-item__image--side-projects-container:hover span.side-project-name{
-//  opacity: 1;
-// }
 
 .my-work-item__side-project {
+  
+  //small devices
   position: relative;
-  max-width: calc(@screen-large/4);
+  max-width: 100%;
+  width: 100%;
   display: inline-block;
+
+  //medium devices
+  @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+    max-width: 50%;
+  }
+
+  // Large devices
+  @media screen and (min-width: @screen-large) {
+    max-width: 50%;
+  }
+
 }
 
 .my-work-item__side-project:hover span.side-project-name{
@@ -538,12 +557,15 @@ p {
 }
 
 .my-work-item__image--side-project-link {
-  max-width: calc(@screen-large/4);
+  max-width: 100%;
+  width: 100%;
   position: relative;
+  vertical-align: bottom; //to remove the vertical gap between the images
 }
 
 .my-work-item__image--side-project-link:hover{
     opacity:1;
+    height: 100%;
 }
 
 
@@ -556,11 +578,32 @@ span.side-project-name {
   left: 0;
   position: absolute;
   top: 0;
-  height: calc(@screen-large/4);
-  // width: calc(@screen-large/4);
-  width: 100%;
+  // max-height: calc(@screen-large/2);
+  // height: calc(@screen-large/2);
+  
+  // width: 100%;
+  // padding-top: 100%;
+
   opacity: 0;
   font-size: 18px;
+
+  //small devices
+  width: 90vw;
+  height: 90vw;
+
+  //medium devices
+  @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+    //here I know that the margin is 5% on each side, so using the remaining 45%
+    width: 45vw;
+    height: 45vw;
+  }
+
+  // Large devices
+  @media screen and (min-width: @screen-large) {
+    //on large devices, I can use absolute values
+    width: 100%;
+    height: calc(@screen-large/2);
+  }
 }
 
 span.side-project-name span {
