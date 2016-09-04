@@ -1,7 +1,14 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-// var browserSync = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
+
+// optimise images
+gulp.task('images', function(){
+  return gulp.src('images/**/*.+(png|jpg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('images'))
+})
 
 
 //compile less to css
@@ -16,7 +23,7 @@ gulp.task('less', function(){
 
 
 //watch files for changes
-gulp.task('serve', ['less', 'browserSync'], function(){
+gulp.task('serve', ['less', 'images', 'browserSync'], function(){
   gulp.watch('less/**/*.less', ['less']); 
   gulp.watch('*.html', browserSync.reload); 
 })
