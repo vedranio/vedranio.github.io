@@ -557,6 +557,9 @@ span.side-project-name span {
 .link--inline {
   display: inline;
 }
+.link--case-study-nav {
+  padding-right: 3em;
+}
 .text--on-dark-bg {
   color: #ffffff;
 }
