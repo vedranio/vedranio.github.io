@@ -718,7 +718,13 @@ span.side-project-name span {
 
 .link--case-study-nav
 {
-  padding-right: 3em;
+  display: block;
+  padding-bottom: 0.75em;
+
+  @media screen and (min-width: @screen-small) {
+    display: inline;
+    padding-right: 3em;
+  }
 }
 
 .text--on-dark-bg {
