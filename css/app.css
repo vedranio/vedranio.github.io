@@ -157,7 +157,7 @@ p {
   max-width: 400px;
   color: #ffffff;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 3.8%;
 }
 @media screen and (min-width: 700px) {
   .intro__content {
@@ -165,6 +165,7 @@ p {
     background-color: #E0E0E0;
     padding-bottom: 0;
     margin-bottom: 0;
+    margin-right: 5%;
   }
 }
 .section__content {
