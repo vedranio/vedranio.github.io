@@ -1,27 +1,48 @@
 {
-  "name": "thatbalduxguy",
-  "version": "1.0.0",
-  "description": "Personal portfolio site for Vedran Arnautovic",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "react-starter",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=4"
   },
-  "author": "Vedran Arnautovic",
-  "license": "ISC",
+  "scripts": {
+    "analyze": "webpack --config webpack/webpack.client.babel.js --profile --json > stats.json",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "webpack --progress --config webpack/webpack.client.babel.js",
+    "build:server": "webpack --progress --config webpack/webpack.server.babel.js",
+    "dev": "npm run build:server && node build/server",
+    "lint": "eslint --ignore-path .gitignore .",
+    "prebuild": "rimraf build/*",
+    "start": "node build/server"
+  },
   "devDependencies": {
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "browser-sync": "^2.10.1",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-less": "^3.0.5"
+    "babel-cli": "6.22.2",
+    "eslint": "3.14.0",
+    "eslint-config-airbnb": "14.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "3.0.2"
   },
   "dependencies": {
-    "browser-sync": "^2.10.1",
-    "gulp": "^3.9.0",
-    "gulp-less": "^3.0.5",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "assets-webpack-plugin": "3.5.1",
+    "babel-loader": "6.2.10",
+    "babel-plugin-transform-react-remove-prop-types": "0.3.0",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-react": "6.22.0",
+    "compression": "1.6.2",
+    "eslint-plugin-react": "6.9.0",
+    "express": "4.14.1",
+    "file-loader": "0.10.0",
+    "morgan": "1.8.0",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-router-dom": "4.0.0-beta.4",
+    "rimraf": "2.5.4",
+    "styled-components": "2.0.0-1",
+    "url-loader": "0.5.7",
+    "webpack": "2.2.1",
+    "webpack-dev-middleware": "1.10.0",
+    "webpack-hot-middleware": "2.16.1",
+    "webpack-md5-hash": "0.0.5",
+    "webpack-node-externals": "1.5.4"
   }
 }
