@@ -1,0 +1,168 @@
+/* general, page wide styling */
+html {
+	font-family: Helvetica,Arial,sans-serif;
+}
+body {
+	margin: 0;
+}
+
+div {
+	/* lines for showing the grid */
+
+  	/*background-size: 100% 30px;
+  	background-image: linear-gradient(to bottom,
+                                    black 0%,
+                                    transparent 5%,
+                                    transparent 50%,
+                                    red 51%,
+                                    transparent 53%,
+                                    transparent 100%);*/
+
+}
+
+
+/* ----------------
+   HEADER STYLES 
+---------------- */
+
+
+/* styling the page header - the first of the fat blocks */
+#header_block {
+	background-color: #3370A7;
+
+	text-align: center;
+	color: #ffffff;
+}
+
+#header_profile_image {
+	width: 300px;
+	height: 300px;
+
+	display: block;
+	margin: 0 auto;
+}
+
+#header_name {
+	font-family: 'Lobster', Helvetica;
+	font-size: 40px;
+	
+	margin: 0 auto -8px auto;
+  	padding-top: 20px;
+	
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, .2);
+}
+
+#header_job_title {
+	font-family: 'Roboto', Helvetica;
+	font-weight: 300;
+	font-size: 20px;
+	
+	margin: 0 auto -8px auto;
+  	padding-top: 5px;
+
+	line-height: 30px;
+}
+
+#header_text {
+	/* to do - define a different style for this */
+}
+
+
+
+/*-------------------------------
+  GENERAL CONTENT BLOCK STYLES 
+------------------------------- */
+
+.block {
+	width: 100%;
+	padding: 60px 0px 105px 0px;
+}
+
+/* styling the intro block */
+.dark_block {
+	background-color: #E9EAEE;
+	color: #404040;
+}
+
+/* styling the current work block */
+.light_block {
+	background-color: #ffffff;
+	color: #404040;
+}
+
+.light_link {
+
+	/* for use on dark backgrounds */
+	color: #ffffff;
+}
+
+.dark_link {
+
+	/* for use on light backgrounds */
+	color: #404040;
+}
+
+.section_heading {
+
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	text-align: center;
+	line-height: 60px;   
+	margin: 0px 20% 0px 20%;
+}
+
+.section_paragraph {
+	
+	font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: left;
+
+
+	/* the negative bottom margin and correspoding top padding are the trick to getting the text on the baseline */
+	margin: 0 auto -8px auto;
+  	padding-top: 38px;
+
+	line-height: 30px;
+	max-width: 700px;
+	min-width: 300px;
+
+}
+
+.unordered_list {
+	padding-left: 0px;			/* because I want the bullets to be outside in the margin */	
+	padding-top: 8px;
+	list-style-type: circle;
+}
+
+
+
+/* -----------
+   RESPONSIVE 
+-------------- */   
+
+@media all and (max-width: 780px) {
+	/*
+		This breakpoint is chosen because my max paragraph width is 700px. The additional 80px gives me a comfortable margin
+		either side of the paragraph text. Once we start getting narrower that that, I have to start specifying the margin
+		manually and cranking up the font size. 
+	*/
+  .section_paragraph, .unordered_list {
+    margin: 0 40px 0 40px;
+    min-width: 200px;
+  }
+
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+
+
+
+
+
+
+
