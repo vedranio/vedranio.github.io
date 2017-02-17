@@ -1,0 +1,197 @@
+/*LARGE DEVICE*/
+
+body{
+	text-align: center;
+	background: #3370A7;
+  font-family: 'Helvetica', 'Roboto', sans-serif;
+  font-weight: 100;
+  max-width: 600px;
+  min-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  color: #fff;
+  font-weight: 100;
+  font-size: 35px;
+  margin: 40px 0px 20px;
+  text-align: left;
+}
+
+p{
+  color: #fff;
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 40px;
+  margin: 0px 0px 20px;
+  text-align: left;
+}
+
+#dearpete{
+	width: 600px;
+	display: inline-block;
+	text-align: left;
+	margin-left: 0px;
+	padding-bottom: 10px;
+}
+
+#message{
+	width: 600px;
+	display: inline-block;
+	text-align: left;
+	margin-left: 0px;
+	padding-bottom: 20px;
+}
+
+#signature{
+	width: 600px;
+	display: inline-block;
+	text-align: left;
+	margin-left: 0px;
+	padding-bottom: 20px;
+	padding-top: 60px;
+}
+
+#clockdiv{
+	width: 600px;
+	font-family: 'Helvetica', 'Roboto', sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 60px;
+}
+
+#clockdiv > div{
+	padding: 15px;
+	border-radius: 3px;
+	background: #4597DF;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #3370A7;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+/*MEDIUM DEVICE*/
+
+@media (max-width: 640px) {
+	
+	body{
+		  max-width: 580px;
+		  min-width: 580px;
+	}
+
+	h1{
+	  font-size: 35px;
+	  margin: 40px 0px 20px;
+	}
+
+	p{
+	  font-size: 35px;
+	  line-height: 40px;
+	  margin: 0px 0px 20px;
+	}
+
+	#dearpete{
+		width: 580px;
+		margin-left: 0px;
+	}
+
+	#message{
+		width: 580px;
+		margin-left: 0px;
+	}
+
+	#signature{
+		width: 580px;
+		margin-left: 0px;
+	}
+
+	#clockdiv{
+		width: 432px;
+		font-size: 45px;
+		margin-left: 0px;
+		display: block;
+	}
+
+	#clockdiv > div{
+		padding: 10px;
+	}
+
+	#clockdiv div > span{
+		padding: 10px;
+		border-radius: 3px;
+	}
+
+	.smalltext{
+		padding-top: 5px;
+		font-size: 20px;
+	}
+
+}
+
+/*SMALL DEVICE*/
+
+@media (max-width: 600px) {
+	
+	body{
+		  max-width: 300px;
+		  min-width: 300px;
+	}
+
+	h1{
+	  font-size: 20px;
+	  margin: 40px 0px 20px;
+	}
+
+	p{
+	  font-size: 20px;
+	  line-height: 30px;
+	  margin: 0px 0px 20px;
+	}
+
+	#dearpete{
+		width: 300px;
+		margin-left: 0px;
+	}
+
+	#message{
+		width: 300px;
+		margin-left: 0px;
+	}
+
+	#signature{
+		width: 300px;
+		margin-left: 0px;
+	}
+
+	#clockdiv{
+		width: 300px;
+		font-size: 20px;
+	}
+
+	#clockdiv > div{
+		padding: 10px;
+	}
+
+	#clockdiv div > span{
+		padding: 10px;
+		border-radius: 3px;
+	}
+
+	.smalltext{
+		padding-top: 5px;
+		font-size: 14px;
+	}
+
+}
