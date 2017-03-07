@@ -5,9 +5,9 @@ var browserSync = require('browser-sync');
 
 // optimise images
 gulp.task('images', function(){
-  return gulp.src('images/**/*.+(png|jpg)')
+  return gulp.src('resources/images/**/*.+(png|jpg)')
   .pipe(imagemin())
-  .pipe(gulp.dest('images'))
+  .pipe(gulp.dest('resources/images'))
 })
 
 
