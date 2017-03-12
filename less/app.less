@@ -588,11 +588,6 @@ span.side-project-name {
   left: 0;
   position: absolute;
   top: 0;
-  // max-height: calc(@screen-large/2);
-  // height: calc(@screen-large/2);
-
-  // width: 100%;
-  // padding-top: 100%;
 
   opacity: 0;
   font-size: 18px;
@@ -600,6 +595,12 @@ span.side-project-name {
   //small devices
   width: 90vw;
   height: 90vw;
+
+  //touch devices
+  @media (any-hover: none) {
+    //can't hover on touch devices, so mane the label always visible
+    opacity: 1;
+  }
 
   //medium devices
   @media screen and (min-width: @screen-medium) and (max-width: @screen-large) {

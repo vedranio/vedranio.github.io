@@ -472,6 +472,11 @@ span.side-project-name {
   width: 90vw;
   height: 90vw;
 }
+@media (any-hover: none) {
+  span.side-project-name {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 700px) and (max-width: 900px) {
   span.side-project-name {
     width: 45vw;
