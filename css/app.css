@@ -600,3 +600,6 @@ span.side-project-name span {
   margin-bottom: 2em;
   line-height: 1.5em;
 }
+.nobr {
+  white-space: nowrap;
+}
