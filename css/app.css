@@ -30,7 +30,7 @@ p {
   position: -ms-sticky;
   position: -o-sticky;
   position: sticky;
-  z-index: 1;
+  z-index: 1000;
   top: 0px;
 }
 @media screen and (min-width: 900px) {
