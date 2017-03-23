@@ -24,25 +24,18 @@
 	</head>
 	<body>
 	<!-- NAV -->
-		<nav class="nav" id="nav">
-					<ul class="nav__list">
-						<li class="nav__item nav__item--selected"><a href="index.html">Home</a></li>
-						<li class="nav__item"><a href="about_vedran.html">About me</a></li>
-						<li class="nav__item"><a href="vedrans_design_work.html">My work</a></li>
-					</ul>
-		</nav>
-		<div class="header--extra-pading">
-
-		</div>
+	<nav class="nav" id="nav">
+				<ul class="nav__list">
+					<li class="nav__item nav__item--selected"><a href="index.html">Home</a></li>
+					<li class="nav__item"><a href="about_vedran.html">About me</a></li>
+					<li class="nav__item"><a href="vedrans_design_work.html">My work</a></li>
+				</ul>
+	</nav>
+	<div class="header--extra-pading"></div>
 	<!-- Make nav sticky on scroll -->
-	<script type="text/javascript">
-		window.onscroll = function() {
-			var sticky = document.getElementById('nav');
-			if( document.body.scrollTop > 1)
-					sticky.className = "nav nav--stuck";
-			else sticky.className = "nav";
-		};
-	</script>
+	<script type="text/javascript" src="/js/sticky_nav.js"></script>
+	<script type="text/javascript">formatStickyNav("@colour-medium-gray");</script>
+
 	<!-- HEADER -->
 	<header class="header">
 			<div class="header__content">
