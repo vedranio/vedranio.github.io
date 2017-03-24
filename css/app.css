@@ -257,6 +257,14 @@ p {
 .paragraph__home {
   max-width: 400px;
 }
+.tota11y {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .tota11y {
+    display: block;
+  }
+}
 .image--full-width {
   max-width: 100%;
   display: block;
@@ -555,7 +563,7 @@ span.side-project-name span {
 }
 @media screen and (min-width: 700px) {
   .link__about-me {
-    color: #0066CC;
+    color: #0062C3;
     text-decoration: none;
   }
 }
@@ -564,7 +572,7 @@ span.side-project-name span {
   text-decoration: underline;
 }
 .link--on-light-bg {
-  color: #0066CC;
+  color: #0062C3;
 }
 .link--list {
   margin-top: 0;
