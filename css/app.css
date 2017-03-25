@@ -571,8 +571,14 @@ span.side-project-name span {
   color: #ffffff;
   text-decoration: underline;
 }
+.link--on-dark-bg:visited {
+  color: #E0E0E0;
+}
 .link--on-light-bg {
   color: #0062C3;
+}
+.link--on-light-bg:visited {
+  color: #9900CC;
 }
 .link--list {
   margin-top: 0;
