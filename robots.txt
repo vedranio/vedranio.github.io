@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /side_projects/minty.ninja/
+Sitemap: http://www.vedran.io/sitemap.xml
