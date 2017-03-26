@@ -33,9 +33,9 @@ p {
 // --- NAV
 
 .nav {
-  transition: background-color 0.25s ease;
   background-color: @colour-medium-gray;
-  padding: 0.1em 0em 0.1em 0em;
+  transition: background-color 0.25s ease;
+  padding: 0.01em 0em 0.01em 0em;
 
   position: -webkit-sticky;
   position: -moz-sticky;
@@ -46,15 +46,14 @@ p {
   top: 0px;
 
   @media screen and (min-width: @screen-large) {
-    padding: 2em 2em 2em 2em;
+    padding: 1.5em 2em 1.5em 2em;
   }
 }
 
 .nav--stuck {
-
+  background-color: @colour-white;
   transition: background-color 1s ease;
   box-shadow: 0px 1px 2px @colour-shadow;
-  background-color: @colour-white;
 }
 
 .nav--on-white-bg {
@@ -167,7 +166,7 @@ p {
 }
 
 .header--extra-pading {
-  padding-bottom: 3em;
+  padding-bottom: 4em;
   background-color: @colour-medium-gray;
 }
 
