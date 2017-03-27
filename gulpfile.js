@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
+var sitemap = require('gulp-sitemap');
+
 
 // optimise images
 gulp.task('images', function(){
@@ -21,9 +23,21 @@ gulp.task('less', function(){
     }))
 })
 
+//build/update the sitemap
+gulp.task('sitemap', function () {
+    gulp.src(['./*.html', './side_projects/**/*.html'], {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'http://www.vedran.io'
+        }))
+        .pipe(gulp.dest('./'));
+});
+
+
 
 //watch files for changes
-gulp.task('serve', ['less', 'images', 'browserSync'], function(){
+gulp.task('serve', ['less', 'images', 'sitemap', 'browserSync'], function(){
   gulp.watch('less/**/*.less', ['less']);
   gulp.watch('*.html', browserSync.reload);
 })
