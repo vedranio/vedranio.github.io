@@ -14,9 +14,12 @@ function formatStickyNav(colour) {
             navBackgroundColourClass = "nav--on-white-bg";
     }
 
-    if( document.body.scrollTop > 1)
-        // sticky.className = "nav nav--stuck";
-        sticky.className = "nav nav--stuck" ;
-    else sticky.className = "nav " + navBackgroundColourClass;
+    //this is required to make sure scrolling gets detected in all browsers (Firfeox was the problem)
+    var bodyScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+    if( bodyScrollTop > 1)
+        sticky.className = "nav nav--stuck";
+    else
+      sticky.className = "nav " + navBackgroundColourClass;
   };
 }
