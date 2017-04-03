@@ -71,18 +71,22 @@
 
 
 
-		<!-- FOOTER -->
+		<!-- START FOOTER -->
+		<script src="js/clipboard.min.js"></script>
+		<script src="js/copy_email.js"></script>
+		<div id='footer'></div>
 		<div class="footer section--dark footer__content">
-			<div class="section__content section__content--allow-wide">
-				<p>
+			<div class="section__content ">
 					<a class ="link link--on-dark-bg link__footer" target="_blank" href="https://twitter.com/vedranio">Twitter</a>
 					<a class ="link link--on-dark-bg link__footer" target="_blank" href="https://medium.com/@vedranio">Medium</a>
 					<a class ="link link--on-dark-bg link__footer" target="_blank" href="https://www.linkedin.com/in/vedran-arnautovic-716a1b128">LinkedIn</a>
 					<a class ="link link--on-dark-bg link__footer" target="_blank" href="https://github.com/vedranio">GitHub</a>
 					<a class ="link link--on-dark-bg link__footer" target="_blank" href="https://www.instagram.com/vedran_arnautovic/">Instagram</a>
-					<a class ="link link--on-dark-bg link__footer" href="mailto:vedran.arnautovic@gmail.com">Email</a>
-				</p>
+					<a id="email" class ="link link--on-dark-bg link__footer copy-email" data-clipboard-text="hello@vedran.io" href="#footer">hello@vedran.io</a>
+					<script type="text/javascript">copyEmailToClipBoard('.copy-email','email', "link link--on-dark-bg link__footer copy-email","hello@vedran.io");</script>
 			</div>
 		</div>
+		<!-- END FOOTER -->
+
 	</body>
 </html>

@@ -598,7 +598,7 @@ span.side-project-name span {
 @media screen and (min-width: 700px) {
   .link__footer {
     display: inline;
-    padding-right: 2em;
+    padding-right: 1.5em;
   }
 }
 .link--inline {
@@ -640,6 +640,10 @@ span.side-project-name span {
 }
 .nobr {
   white-space: nowrap;
+}
+.email-coppied-confirmation {
+  text-decoration: none;
+  color: #ffffff;
 }
 .text-flicker-in-glow {
   -webkit-animation: text-flicker-in-glow 3s linear 250ms both;
