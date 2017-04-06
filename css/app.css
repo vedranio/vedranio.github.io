@@ -641,8 +641,27 @@ span.side-project-name span {
 .nobr {
   white-space: nowrap;
 }
-.email-coppied-confirmation {
+.email-bttn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  color: #ffffff;
+  background: none;
+  padding: 0.5em;
+  border: solid #ffffff 1px;
   text-decoration: none;
+  display: inline-block;
+  width: 130px;
+  margin-left: -0.5em;
+  margin-right: 1.5em;
+}
+.email-bttn:hover {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  border: solid #ffffff 1px;
+}
+.email-bttn:visited {
   color: #ffffff;
 }
 .text-flicker-in-glow {
