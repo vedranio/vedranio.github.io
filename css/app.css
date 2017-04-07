@@ -670,6 +670,9 @@ span.side-project-name span {
 .email-bttn:visited {
   color: #ffffff;
 }
+.email-bttn:focus {
+  outline: none;
+}
 .text-flicker-in-glow {
   -webkit-animation: text-flicker-in-glow 3s linear 250ms both;
   -moz-animation: text-flicker-in-glow 3s linear 250ms both;

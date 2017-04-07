@@ -18,11 +18,11 @@ function copyEmailToClipBoard(targetClass, elementID, originalLinkClass, origina
   });
 }
 
-function mouseOver(targetClass)
+function mouseOver(targetElement)
 {
-    document.getElementById(targetClass).innerHTML = "copy email";
+    document.getElementById(targetElement).innerHTML = "copy email";
 }
 
-function mouseOut(targetClass, originalLinkContent) {
-    document.getElementById(targetClass).innerHTML = originalLinkContent;
+function mouseOut(targetElement, originalLinkContent) {
+    document.getElementById(targetElement).innerHTML = originalLinkContent;
 }
