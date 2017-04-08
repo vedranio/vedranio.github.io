@@ -816,47 +816,77 @@ span.side-project-name span {
   white-space:nowrap;
 }
 
-// used to give feedback when email link is coppied
-// .email-coppied-confirmation {
-//   text-decoration: none;
-//   color: @colour-white;
-// }
-
-.email-bttn {
+// generic button
+.bttn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  color: @colour-white;
-  background: none;
-  padding: 0.5em;
-  border: solid @colour-white 1px;
-  text-decoration: none;
   display: inline-block;
-  width: 130px;
-  margin-left: -0.5em;
+  padding: 0;
+  cursor: pointer;
+
+}
+
+.bttn:focus {
+  outline: none;
+}
+
+.bttn--email {
+  width: 150px;
+  margin-left: -0.8em;
   margin-right: 1.5em;
+  margin-bottom: 1.5em;
 
   // Medium and large devices
   @media screen and (min-width: @screen-medium) {
-    padding: 0.5em 1em 0.5em 1em;
-    margin-left: -1em;
+    width: 180px;
+    margin-left: -2em;
+    margin-right: 2.5em;
+    margin-bottom: 0;
   }
-
 }
 
-.email-bttn:hover {
-  text-decoration: none;
-  text-align: center;
+.bttn--almost-black {
   color: @colour-white;
+  background: @colour-almost-black;
   border: solid @colour-white 1px;
+
+  -webkit-transition: background 0.7s ease;
+  -moz-transition: background 0.7s ease;
+  -o-transition: background 0.7s ease;
+  transition: background 0.7s ease;
 }
 
-.email-bttn:visited {
-  color: @colour-white;
+.bttn--almost-black:hover {
+
+  @media (any-hover: hover) {
+    color: @colour-almost-black;
+    background: @colour-white;
+    border: solid @colour-white 1px;
+  }
 }
 
-.email-bttn:focus {
-  outline: none;
+
+.bttn__label {
+  display: inline-block;
+  font-size: @font-base-size;
+  text-decoration: none;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  width: inherit;
+  text-align: center;
+}
+
+
+// prevent things like navigation being seleted
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 // animation for 404 page
