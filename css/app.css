@@ -161,6 +161,7 @@ p {
     vertical-align: top;
     padding-top: calc(5em);
     margin-left: 2em;
+    max-width: 380px;
   }
 }
 .intro__content {
