@@ -817,7 +817,7 @@ span.side-project-name span {
   white-space:nowrap;
 }
 
-// generic button
+// copy email button
 .bttn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -877,6 +877,47 @@ span.side-project-name span {
   width: inherit;
   text-align: center;
 }
+
+// modal
+.modal {
+  display: none;    //hidden by default
+  position: fixed;  //don't mover around
+  z-index: 20000;       //stay on top
+  padding-top: 0;   //start at the top of the screen
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal__content {
+  background-color: @colour-white;
+  margin: auto;
+  width: 100%;
+  height:100%;
+}
+
+.modal__close-button {
+  color: @colour-link-blue;
+  float: right;
+  font-size: calc(2.5 * @font-base-size);
+  font-weight: @font-weight-bold;
+  margin-top: -1em;
+
+  // Medium and large devices
+  @media screen and (min-width: @screen-medium) {
+    margin-top: 0.3em;
+  }
+
+}
+
+.modal__close-button:hover {
+  color: @colour-link-blue;
+  cursor: pointer;
+}
+
+
 
 
 // prevent things like navigation being seleted
