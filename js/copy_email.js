@@ -10,10 +10,15 @@ function copyEmailToClipBoard(targetClass, elementID, originalLabelClass, origin
     event.clearSelection();
     event.trigger.textContent = 'email copied';
     // then, after a timeout, set it back to it's original content and appearance
+    console.log('coppied');
     window.setTimeout(function() {
         emailButton.className = originalLabelClass;
         event.trigger.textContent = originalLabelContent;
     }, 2000);
+  });
+
+  clipboard.on('error', function(event) {
+    console.log('couldn copy');
   });
 }
 

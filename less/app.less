@@ -834,15 +834,15 @@ span.side-project-name span {
 
 .bttn--email {
   width: 150px;
-  margin-left: -0.8em;
+  margin-left: -0.6em;
   margin-right: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 
   // Medium and large devices
   @media screen and (min-width: @screen-medium) {
     width: 180px;
-    margin-left: -2em;
-    margin-right: 2.5em;
+    margin-left: -1.5em;
+    margin-right: 1.5em;
     margin-bottom: 0;
   }
 }
@@ -861,6 +861,12 @@ span.side-project-name span {
 .bttn--almost-black:hover {
 
   @media (any-hover: hover) {
+    color: @colour-almost-black;
+    background: @colour-white;
+    border: solid @colour-white 1px;
+  }
+
+  @-moz-document url-prefix() {
     color: @colour-almost-black;
     background: @colour-white;
     border: solid @colour-white 1px;

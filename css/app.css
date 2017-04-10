@@ -655,15 +655,15 @@ span.side-project-name span {
 }
 .bttn--email {
   width: 150px;
-  margin-left: -0.8em;
+  margin-left: -0.6em;
   margin-right: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 @media screen and (min-width: 700px) {
   .bttn--email {
     width: 180px;
-    margin-left: -2em;
-    margin-right: 2.5em;
+    margin-left: -1.5em;
+    margin-right: 1.5em;
     margin-bottom: 0;
   }
 }
@@ -677,6 +677,13 @@ span.side-project-name span {
   transition: background 0.7s ease;
 }
 @media (any-hover: hover) {
+  .bttn--almost-black:hover {
+    color: #030303;
+    background: #ffffff;
+    border: solid #ffffff 1px;
+  }
+}
+@-moz-document url-prefix() {
   .bttn--almost-black:hover {
     color: #030303;
     background: #ffffff;
