@@ -1,12 +1,11 @@
 // Get IE or Edge browser version
 var version = detectIE();
 
+
 if (version === false) {
   document.getElementById('life-is-short').style.display = "none";
-  console.log("Not IE");
-} else {
+} else if (version < 9) {
   document.getElementById('life-is-short').style.display = "block";
-  console.log("IE");
 }
 
 /**
