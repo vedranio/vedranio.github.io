@@ -860,6 +860,14 @@ span.side-project-name span {
     border: solid @colour-white 1px;
   }
 
+  // hack for IE10 and IE11
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    color: @colour-almost-black;
+    background: @colour-white;
+    border: solid @colour-white 1px;
+  }
+
+  // hack for firefox
   @-moz-document url-prefix() {
     color: @colour-almost-black;
     background: @colour-white;

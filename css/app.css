@@ -678,6 +678,13 @@ span.side-project-name span {
     border: solid #ffffff 1px;
   }
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .bttn--almost-black:hover {
+    color: #030303;
+    background: #ffffff;
+    border: solid #ffffff 1px;
+  }
+}
 @-moz-document url-prefix() {
   .bttn--almost-black:hover {
     color: #030303;
