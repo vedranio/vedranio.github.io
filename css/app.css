@@ -214,6 +214,14 @@ p {
     padding-top: 3em;
   }
 }
+.section--top-of-page {
+  padding-top: calc(5em);
+}
+@media screen and (min-width: 900px) {
+  .section--top-of-page {
+    padding-top: 7.5em;
+  }
+}
 .section--last-in-section {
   padding-bottom: calc(2em);
 }

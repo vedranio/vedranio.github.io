@@ -257,6 +257,14 @@ p {
   }
 }
 
+.section--top-of-page {
+  padding-top: calc(@section-padding-top-of-page/1.5);
+
+  @media screen and (min-width: @screen-large) {
+    padding-top: @section-padding-top-of-page;
+  }
+}
+
 .section--last-in-section {
 
   padding-bottom: calc(@section-padding-last/2);
