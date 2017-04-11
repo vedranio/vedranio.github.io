@@ -896,26 +896,41 @@ span.side-project-name span {
 
 // modal
 .modal {
-  display: none;    //hidden by default
-  position: fixed;  //don't mover around
-  z-index: 100;       //stay on top
-  padding-top: 0;   //start at the top of the screen
+  position: fixed;
+  z-index: 300;       //stay on top
+  padding-top: 2em;   //position modal from top of screen
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-color: rgb(0,0,0); // Fallback color
+  background-color: rgba(0,0,0,0.4); // Black with opacity
+}
+
+.modal--browser-warning {
+  display: block;    //hidden by default
 }
 
 .modal__content {
   background-color: @colour-white;
   margin: auto;
-  width: 100%;
-  height:100%;
+  width: 80%;
+  padding: 2em;
+
+  // Medium devices
+  @media screen and (min-width: @screen-medium) {
+    width: 60%;
+  }
+
+  // Large devices
+  @media screen and (min-width: @screen-large) {
+    width: 50%;
+  }
 }
 
 .modal__close-button {
-  color: @colour-link-blue;
+  color: @colour-almost-black;
   float: right;
   font-size: calc(2.5 * @font-base-size);
   font-weight: @font-weight-bold;
@@ -923,7 +938,7 @@ span.side-project-name span {
 
   // Medium and large devices
   @media screen and (min-width: @screen-medium) {
-    margin-top: 0.3em;
+    margin-top: -1em;
   }
 
 }
