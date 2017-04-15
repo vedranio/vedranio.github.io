@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /resources/axure_libraries/
+Disallow: /resources/documents/Vedran-Arnautovic–Resume-2017.pdf
 Sitemap: http://www.vedran.io/sitemap.xml
