@@ -42,38 +42,34 @@
 	</head>
 	<body>
 
-	<!-- START IE RANT  -->
-	<div id="life-is-short" class="modal modal__content">
-		<div class="section section--medium section--first-in-section section--last-in-section">
-			<div class="section__content">
-				<span id="close-modal-button"
+	<!-- START BROWSER MESSAGE  -->
+	<!-- Full screen overlay -->
+	<div id="life-is-short" class="modal modal--browser-warning">
+		<!-- the modal -->
+		<div class="modal__content">
+			<!-- modal content -->
+			<div class="section section--light">
+				<div class="section__content">
+					<span id="close-modal-button"
 
-							class="modal__close-button"
-							onclick="closeModal('life-is-short')">
-					&times
-				</span>
-				<h1 class="h1-heading">Looking for vedran.io?</h1>
-				<p>Unfortunately, you're not using a <a class ="link link--on-light-bg link--inline" target="_blank" href="https://www.w3counter.com/globalstats.php">preferred</a> browser.</p>
-				<p>Using IE or Edge means that some of the content on my site won't display as intended and some of the features may not work.</p>
-				<a class ="link link--on-light-bg" href="#"
-					onclick="closeModal('life-is-short')">
-					I like pain, show me your site
-				</a>
-			</div>
-		</div>
-		<div class="section section--light">
-			<div class="section__content section--first-in-section">
-				<h2 class="h2-heading">Why not just get it to work in IE?</h2>
-				<p>I could spend hours getting my site to behave on Microsoft IE and Edge according to modern web standards.</p>
-				<p>Or, I could spend time with my wife and kids, hang out with my friends, play sport or write code for browsers that work...</p>
-				<p>Life is too short to bang your head against a wall.</p>
-			</div>
-			<div class="sub-section__content">
-				<h2 class="h2-heading">Want a better browser?</h2>
-				<p>You spend a good proportion of your life browsing the internet. Make the most of it – get a better browser. The <a class ="link link--on-light-bg link--inline" target="_blank" href="https://www.w3counter.com/globalstats.php">tide is turning</a> against Microsoft's browsers. It's time to switch.</p>
-				<a class ="link link--on-light-bg" target="_blank "href="https://www.google.com.au/chrome/browser/features.html">Get Google Chrome</a>
-				<a class ="link link--on-light-bg" target="_blank" href="https://www.mozilla.org/en-US/firefox/new/">Get Mozilla Firefox</a>
-				<p><br><br><br></p>
+								class="modal__close-button"
+								onclick="closeModal('life-is-short')">
+						&times
+					</span>
+					<h1 class="h1-heading">Looks like you're using an outdated browser</h1>
+					<p>You can proceed and visit my my site, but some of the layout and functionality may not work as intended.</p>
+					<a class ="link link--on-light-bg" href="#"
+						onclick="closeModal('life-is-short')">
+						I like pain, show me your site
+					</a>
+				</div>
+				<div class="section section--light">
+					<div class="section__content section--first-in-section section--last-in-section">
+						<h2 class="h2-heading">Want a better browser?</h2>
+						<p>Chances are, you spend a good proportion of your life on the internet. Make the most of it – get a modern browser.</p>
+						<a class ="link link--on-light-bg" target="_blank "href="http://www.browsehappy.com/">Learn about modern browsers</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -83,7 +79,7 @@
 		}
 	</script>
 	<script type="text/javascript" src="/js/detect_ms_browsers.js"></script>
-	<!-- END IE RANT  -->
+	<!-- END BROWSER MESSAGE  -->
 
 	<!-- NAV -->
 	<nav class="nav noselect" id="nav">
@@ -129,11 +125,19 @@
 			</div>
 		</div>
 		<!-- DESIGN COMMUNITY -->
-		<div class="section section--light section--last-in-section">
+		<div class="section section--light">
 			<div class="section__content">
 				<h2 class="h2-heading">Design community</h2>
 					<p class="paragraph__home">I am actively involved in local design meetups, have <a class ="link link--on-light-bg link--inline" target="_blank" href="http://www.meetup.com/Sarajevo-UX-Design/">founded one myself</a> and love sharing ideas and learning about other designers’ processes.</p>
 				<a class ="link link--on-light-bg" href="http://www.slideshare.net/vedranio/presentations" target="_blank">Browse my presentations</a>
+			</div>
+		</div>
+		<!-- MY RESUME -->
+		<div class="section section--light section--last-in-section">
+			<div class="section__content">
+				<h2 class="h2-heading">My resumé</h2>
+					<p class="paragraph__home">This site contains examples of my work, showing how I approach design. If you're after a more traditional resumé, you can access it below.</p>
+				<a class ="link link--on-light-bg" href="http://www.vedran.io/resources/documents/Vedran-Arnautovic–Resume-2017.pdf" target="_blank">View my resumé</a>
 			</div>
 		</div>
 

@@ -760,24 +760,38 @@ span.side-project-name span {
   text-align: center;
 }
 .modal {
-  display: none;
   position: fixed;
-  z-index: 100;
-  padding-top: 0;
+  z-index: 300;
+  padding-top: 2em;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal--browser-warning {
+  display: block;
 }
 .modal__content {
   background-color: #ffffff;
   margin: auto;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  padding: 2em;
+}
+@media screen and (min-width: 700px) {
+  .modal__content {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .modal__content {
+    width: 50%;
+  }
 }
 .modal__close-button {
-  color: #0062C3;
+  color: #030303;
   float: right;
   font-size: calc(45px);
   font-weight: 700;
@@ -785,7 +799,7 @@ span.side-project-name span {
 }
 @media screen and (min-width: 700px) {
   .modal__close-button {
-    margin-top: 0.3em;
+    margin-top: -1em;
   }
 }
 .modal__close-button:hover {
