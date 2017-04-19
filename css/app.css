@@ -772,7 +772,7 @@ span.side-project-name span {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .modal--browser-warning {
-  display: block;
+  display: none;
 }
 .modal__content {
   background-color: #ffffff;
