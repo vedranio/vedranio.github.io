@@ -369,7 +369,7 @@ p {
   .my-work-item--with-side-image {
     max-width: 900px;
     margin: auto;
-    padding-top: 8em;
+    padding-top: 10em;
     padding-bottom: 10em;
   }
 }
@@ -379,7 +379,7 @@ p {
   }
 }
 .h2-heading__with-side-image--vertically-stacked {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 @media screen and (min-width: 900px) {
   .h2-heading__with-side-image--vertically-stacked {
