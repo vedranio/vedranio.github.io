@@ -35,6 +35,9 @@
 			</div>
 		</div>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
 		<!-- GYMSALES REGISTRATION APP -->
 		<div id="VisitorRegistrationApp" class="section section--medium">
 
@@ -42,9 +45,11 @@
 
 				<h2 class="h2-heading h2-heading__with-ipad--vertically-stacked">Visitor registration app</h2>
 
-				<img class="my-work-item__image--ipad" src="resources/images/visitor_registration_iPad_app.png" alt="Visitor registration ipad app"/>
-
-
+				<div id="ipad-img-container" class="my-work-item__image--ipad placeholder" data-large="resources/images/visitor_registration_iPad_app.png">
+					<img id="ipad-img-placeholder" class="img-small" src="resources/images/visitor_registration_iPad_app_PLACEHOLDER.png">
+					<div style="padding-bottom: 148.5%;"></div>
+				</div>
+				<script type="text/javascript">lazyLoadImage('ipad-img-container','ipad-img-placeholder','my-work-item__image--ipad-shadow');</script>
 
 				<div class="my-work-item__description--ipad">
 				<h2 class="h2-heading h2-heading__with-ipad--side-by-side">Visitor registration app</h2>
@@ -54,6 +59,8 @@
 				</div>
 			</div>
 		</div>
+
+
 
 		<!-- DESIGN SPRINT -->
 		<div id="DesignSprintForJoraLocal" class="section section--light">
@@ -66,7 +73,14 @@
 					<p><a class ="link link--on-light-bg" href="case_study--design_sprint.html">Read case study</a></p>
 					</div>
 
-					<img class="my-work-item__image--browser-centred" src="resources/images/browser_with_joralocal_page.png" alt="Credit card payment form shown in browser"/>
+					<!-- <img class="my-work-item__image--browser-centred" src="resources/images/browser_with_joralocal_page.png" alt="Credit card payment form shown in browser"/> -->
+
+					<div id="sprint-img-container" class="my-work-item__image--browser-centred placeholder" data-large="resources/images/browser_with_joralocal_page.png">
+						<img id="sprint-img-placeholder" class="img-small" src="resources/images/browser_with_joralocal_page_PLACEHOLDER.png">
+						<div style="padding-bottom: 61.2%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('sprint-img-container','sprint-img-placeholder','my-work-item__image--browser-centred-shadow');</script>
+
 
 			</div>
 		</div>
@@ -78,7 +92,11 @@
 
 				<h2 class="h2-heading h2-heading__with-side-image--vertically-stacked">Cocreating a <nobr>product vision</nobr></h2>
 
-				<img class="my-work-item__image" src="resources/images/vision_creating_journey_map_2.jpg" alt="People creating a journey map with sticky notes"/>
+				<div id="vision-img-container" class="my-work-item__image placeholder" data-large="resources/images/vision_creating_journey_map_2.jpg">
+					<img id="vision-img-placeholder" class="img-small" src="resources/images/vision_creating_journey_map_2_PLACEHOLDER.jpg">
+					<div style="padding-bottom: 75%;"></div>
+				</div>
+				<script type="text/javascript">lazyLoadImage('vision-img-container','vision-img-placeholder');</script>
 
 				<div class="my-work-item__description--side-image">
 					<h2 class="h2-heading h2-heading__with-side-image--side-by-side">Cocreating a <nobr>product vision</nobr></h2>
