@@ -539,6 +539,7 @@ p {
 }
 .my-work-item--side-projects-container {
   font-size: 0;
+  line-height: 0;
   position: relative;
   padding-top: 72px;
   max-width: 100%;
