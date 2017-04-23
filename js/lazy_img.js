@@ -1,4 +1,4 @@
-function lazyLoadImage(imageContainerID, imagePlaceholderID, shadowClass)
+function lazyLoadImage(imageContainerID, imagePlaceholderID, altText, shadowClass)
 {
   var placeholder = document.getElementById(imageContainerID),
       imgSmall = document.getElementById(imagePlaceholderID)
@@ -8,6 +8,7 @@ function lazyLoadImage(imageContainerID, imagePlaceholderID, shadowClass)
   img.src = imgSmall.src;
   img.onload = function () {
    imgSmall.classList.add('loaded');
+   imgSmall.setAttribute("alt", altText);
   };
 
   // 2: load large image
@@ -17,11 +18,11 @@ function lazyLoadImage(imageContainerID, imagePlaceholderID, shadowClass)
     placeholder.classList.add('placholder--loaded');
     imgSmall.classList.add('hidden');
     imgLarge.classList.add('loaded');
+    imgLarge.setAttribute("alt", altText);
 
     if (shadowClass !== undefined) {
         imgLarge.classList.add(shadowClass);
     }
-
   };
 
   placeholder.appendChild(imgLarge);

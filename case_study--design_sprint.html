@@ -23,6 +23,9 @@
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
 		<!-- CASE STUDY INTRO -->
 		<div class="section section--medium">
 			<div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
@@ -41,44 +44,87 @@
 
 					<h3 class="h3-heading">Day 1 – Unpack and immerse</h3>
 					<p>The first day was spent ‘unpacking’ all the information we knew about our target audience. The stragegy team shared their knowledge gathered through Jobs To Be Done research. We had representatives form customer support and sales share their kowledge, since they spend most of their time with customers.</p>
-					<img class="image--medium image--with-caption" src="resources/images/seek_design_sprint_unpack.jpg">
+					<div id="unpack-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_design_sprint_unpack.jpg">
+						<img id="unpack-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_unpack_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('unpack-img-container','unpack-img-placeholder',"The team paying close attention to research findings");</script>
 					<div class="image-caption">The team paying close attention to research findings</div>
+
 					<p>Us designers contributed our insights gathered through extensive user research conducted over the past couple of years.</p>
 					<p>At the end of the day we had a lot of information covering the walls of our design room which needed to be sythesised into something useful.</p>
 					<h3 class="h3-heading">Day 2 – Build empathy</h3>
 					<p>We took the information we shared on day 1, and set to work building empathy maps and customer journey maps. This would form the foundation of insights we would use to decide which opportunities to focus our attention on during the ideation phase.</p>
-					<img class="image--medium image--with-caption" src="resources/images/seek_design_sprint_empathy_map.jpg">
+					<div id="empathy-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_design_sprint_empathy_map.jpg">
+						<img id="empathy-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_empathy_map_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('empathy-img-container','empathy-img-placeholder',"Empathy map");</script>
 					<div class="image-caption">One of the empathy maps we built</div>
+
 					<h3 class="h3-heading">Day 3 & 4 – Ideate and test</h3>
 					<p>In order to design a solution for this target segment, we had to priritise the opportunities we identified through empathy and customer journey maps.</p>
 					<p>Once we agreed on our priorities, the team set out to design potential solutions, using the <a class ="link link--on-light-bg link--inline" target="_blank" href="https://medium.com/seek-user-experience/two-types-of-collaborative-design-sessions-46c6d7090b70#.q12go7h1x">design studio method</a>.</p>
-					<img class="image--medium" src="resources/images/seek_desing_sprint_sketch.jpeg">
+					<div id="sketching-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_desing_sprint_sketch.jpeg">
+						<img id="sketching-img-placeholder" class="img-small" src="resources/images/seek_desing_sprint_sketch_PLACEHOLDER.jpeg">
+						<div style="padding-bottom: 66.8%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('sketching-img-container','sketching-img-placeholder',"The team sketching together");</script>
+
 					<p>However, we had to work quickly – during each of the two ideation days, we had real users coming in during the afternoon to test our designs, using paper prototypes.</p>
-					<img class="image--medium image--with-caption" src="resources/images/seek_design_sprint_test.png">
+					<div id="test-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_design_sprint_test.png">
+						<img id="test-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_test_PLACEHOLDER.png">
+						<div style="padding-bottom: 66.8%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('test-img-container','test-img-placeholder',"Testing paper prototypes with users");</script>
 					<div class="image-caption">Paper prototype testing with a bar owner</div>
+
 					<h3 class="h3-heading">Day 5 – Converge</h3>
 					<p>Day 5 was spent taking stock of everything we learnt during the unpacking phase, as well as from the feedback we gathered from our users.</p>
 					<p>After organising all the information, we voted on and prioritised the ideas we developed during the previous two days.</p>
-					<img class="image--medium image--with-caption" src="resources/images/seek_design_sprint_converge.jpeg">
+					<div id="converge-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_design_sprint_converge.jpeg">
+						<img id="converge-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_converge_PLACEHOLDER.jpeg">
+						<div style="padding-bottom: 51.46%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('converge-img-container','converge-img-placeholder',"Voting on design features to take to the next phase");</script>
 					<div class="image-caption">Voting on design features to take to the next phase</div>
+
 					<h3 class="h3-heading">Day 6 – Prototype</h3>
 					<p>With most of the decisions made, we could focus on cranking out the prototype. The only thing left to design at this point was the navigation model for the app, since we wanted the users to be able to use the app as they would in real life. We quickly put pen-to-paper to investigate possible options.</p>
-					<img class="image--medium image--with-cation" src="resources/images/seek_desing_sprint_nav_model.png">
+					<div id="navmodel-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_desing_sprint_nav_model.png">
+						<img id="navmodel-img-placeholder" class="img-small" src="resources/images/seek_desing_sprint_nav_model_PLACEHOLDER.png">
+						<div style="padding-bottom: 70.7%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('navmodel-img-container','navmodel-img-placeholder',"Voting on design features to take to the next phase");</script>
 					<div class="image-caption">Designing our nav model on paper</div>
+
 					<p>At this point, most of the team want to their day-to-day jobs, while one of my designer colleagues and I dove into prototyping the mobile application we needed to validate our idea with real users.</p>
 					<p>We designed in Sketch and prototpyed the application using <a class ="link link--on-light-bg link--inline" target="_blank" href="https://marvelapp.com/">Marvel</a>.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/seek_design_sprint_prototype.png">
+					<div id="prototype-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_design_sprint_prototype.png">
+						<img id="prototype-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_prototype_PLACEHOLDER.png">
+						<div style="padding-bottom: 86.72%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('prototype-img-container','prototype-img-placeholder',"Artboards in Sketch");</script>
 					<div class="image-caption">One of the many sets of artobards in Sketch</div>
 
-					<img class="image--small image--with-caption" src="resources/images/seek_design_sprint_marvel.png">
+					<div id="marvel-img-container" class="image--small image--with-caption placeholder" data-large="resources/images/seek_design_sprint_marvel.png">
+						<img id="marvel-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_marvel_PLACEHOLDER.png">
+						<div style="padding-bottom: 202.7%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('marvel-img-container','marvel-img-placeholder',"Mobile prototype in Marvel");</script>
 					<div class="image-caption">A screen from the prototype</div>
 
 
 					<h3 class="h3-heading">Day 7 – Guerilla testing</h3>
 					<p>The final day was the most daunting, but also most rewarding. We split into pairs and hit the streets with our prototpyed app in hand. Walking into cafes and restaurants, we tested the app with owners and shift managers.</p>
-					<img class="image--medium image--with-caption" src="resources/images/seek_design_sprint_guerilla_test.jpg">
+					<div id="guerilla-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_design_sprint_guerilla_test.jpg">
+						<img id="guerilla-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_guerilla_test_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('guerilla-img-container','guerilla-img-placeholder',"Artboards in Sketch");</script>
 					<div class="image-caption">Me, guerilla testing with a local cafe owner</div>
+
 					<p>We received a lot of feedback – some positive, and some negative, but always constructive in terms of giving us a direction to pursue.</p>
 					<p>If I learnt one thing from this guerilla testing exercise, it was that when you go out to your users unannounced, you face an altogether different type of reaction. Users are more likely to reject your idea and to provide critical feedback.</p>
 			</div>
@@ -91,7 +137,11 @@
 
 					<p>Since running the design sprint, we have created a spin-off company to take this product to market – that is how JoraLocal was born.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/seek_design_sprint_jora.png">
+					<div id="outcome-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_design_sprint_jora.png">
+						<img id="outcome-img-placeholder" class="img-small" src="resources/images/seek_design_sprint_jora_PLACEHOLDER.png">
+						<div style="padding-bottom: 55.57%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('outcome-img-container','outcome-img-placeholder',"Screenshots of JoraLocal app");</script>
 					<div class="image-caption">Some of the screens frome the live product</div>
 
 					<p>The sprint itself was a major success, now it is up to us to further refine the idea as we take the JoraLocal product to market.</p>

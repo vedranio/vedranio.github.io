@@ -22,6 +22,8 @@
 		<!-- Make nav sticky on scroll -->
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
 
 		<!-- CASE STUDY INTRO -->
 		<div class="section section--medium">
@@ -46,7 +48,11 @@
 
 					<p>The existing online payment form was archaic to say the least. When you ask people to hand over their financial details online, you have to instil confidence. A form that looks like this falls short in the task of instilling confidence </p>
 
-					<img class="image--medium image--with-caption" src="resources/images/seek_existing_credit_card_form.png">
+					<div id="existing-cc-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_existing_credit_card_form.png">
+						<img id="existing-cc-img-placeholder" class="img-small" src="resources/images/seek_existing_credit_card_form_PLACEHOLDER.png">
+						<div style="padding-bottom: 91%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('existing-cc-img-container','existing-cc-img-placeholder',"Existing credit card form");</script>
 					<div class="image-caption">The existing card form left a lot of space for improvement</div>
 
 					<h3 class="h3-heading">Issues with the existing form</h3>
@@ -77,7 +83,11 @@
 
 					<p>The first is the <a class ="link link--on-light-bg link--inline" target="_blank" href="http://bradfrost.com/blog/post/single-field-credit-card-input-pattern/">single field card form</a>, popularised by Brad Frost.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/seek_credit_card_single-cc-demo.gif">
+					<div id="singlefielddemo-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_credit_card_single-cc-demo.gif">
+						<img id="singlefielddemo-img-placeholder" class="img-small" src="resources/images/seek_credit_card_single-cc-demo_PLACEHOLDER.gif">
+						<div style="padding-bottom: 32.1%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('singlefielddemo-img-container','singlefielddemo-img-placeholder',"Single field credit card form demo");</script>
 					<div class="image-caption">Cool and innovative, but not fit for our audience</div>
 
 					<p>This is a brilliantly elegant solution, particulary for mobile phones where space is at a premium. I chose not to use it for two reasons. Firstly, our form was being built exclusively for desktop. More importantly, SEEK caters to an extremely diverse audience of users with varying levels of computer literacy – providing credit card details this way would not be familiar to most of our audience.</p>
@@ -86,7 +96,11 @@
 
 					<p>This is another neat and innovative pattern. What I particularly liked about is that we could do away with instructions for retrieving the card security code, since we could show it on the card itself.</p>
 
-					<img class="image--medium" src="resources/images/seek_skeuocard_visa.png">
+					<div id="skeuocard-img-container" class="image--medium placeholder" data-large="resources/images/seek_skeuocard_visa.png">
+						<img id="skeuocard-img-placeholder" class="img-small" src="resources/images/seek_skeuocard_visa_PLACEHOLDER.png">
+						<div style="padding-bottom: 51.76%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('skeuocard-img-container','skeuocard-img-placeholder',"Skeuocard credit card input form");</script>
 
 					<p>However, this wasn't enough of a reason to depart from a tried and tested way of collecting card information. In addition, the style we have been evolving at SEEK leans away from skeumorphism in favour of near flat design.</p>
 			</div>
@@ -104,12 +118,20 @@
 					<p>The first step in nudging more people to pay by card, was to make the ‘Pay via credit card’ option more prominent.</p>
 					<p>The current design had the two options presented with equal visual weight.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/seek_card_presentation_of_options.png">
+					<div id="paymentoptions-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_card_presentation_of_options.png">
+						<img id="paymentoptions-img-placeholder" class="img-small" src="resources/images/seek_card_presentation_of_options_PLACEHOLDER.png">
+						<div style="padding-bottom: 60.74%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('paymentoptions-img-container','paymentoptions-img-placeholder',"Presenting credit card payment options with equal visual weight");</script>
 					<div class="image-caption">Payment options with equal weight on the right</div>
 
 					<p>While leaving both options available, I changed this to make the card option much more prominent than the invoice option.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/seek_card_presentation_of_options2.png">
+					<div id="paymentoptions2-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/seek_card_presentation_of_options2.png">
+						<img id="paymentoptions2-img-placeholder" class="img-small" src="resources/images/seek_card_presentation_of_options2_PLACEHOLDER.png">
+						<div style="padding-bottom: 71.97%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('paymentoptions2-img-container','paymentoptions2-img-placeholder',"Presenting credit card payment as primary option");</script>
 					<div class="image-caption">Preferred payment option clearly santds out – bottom left</div>
 
 					<h3 class="h3-heading">Input masking</h3>
@@ -127,7 +149,11 @@
 					<h3 class="h3-heading">Capturing the expiry date</h3>
 					<p>There are many ways to capture the expiry date. I considered the following options.</p>
 
-					<img class="image--medium" src="resources/images/seek_card_expiry_date_collection.png">
+					<div id="expiry-img-container" class="image--medium placeholder" data-large="resources/images/seek_card_expiry_date_collection.png">
+						<img id="expiry-img-placeholder" class="img-small" src="resources/images/seek_card_expiry_date_collection_PLACEHOLDER.png">
+						<div style="padding-bottom: 82.62%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('expiry-img-container','expiry-img-placeholder',"Options for capturing credit card expiry");</script>
 
 					<p>I ruled out alt F straight away because drop-downs are the most ‘expensive’ in terms of interaction cost.</p>
 					<p>Alt B and D appealed because they reflected the way the expiry date is presented on the card itself, most often inlcuding the ‘/’ character. However, I did not like using two fields to capture what is esentialy a single piece of information.</p>
@@ -170,7 +196,11 @@
 
 			<div class="sub-section__content">
 					<h2 class="h2-heading">The final design</h2>
-					<img class="image--medium" src="resources/images/browser_with_card_form.png">
+					<div id="ccfinal-img-container" class="image--medium placeholder" data-large="resources/images/browser_with_card_form.png">
+						<img id="ccfinal-img-placeholder" class="img-small" src="resources/images/browser_with_card_form_PLACEHOLDER.png">
+						<div style="padding-bottom: 64.55%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('ccfinal-img-container','ccfinal-img-placeholder',"Final credit card form design");</script>
 			</div>
 
 			<div class="sub-section__content sub-section--last-in-section">
