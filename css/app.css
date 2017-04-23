@@ -509,6 +509,9 @@ p {
     height: 50em;
   }
 }
+.background-image--visible {
+  opacity: 1;
+}
 .my-work-item__description--full-width-image {
   padding-top: 3em;
   padding-bottom: 0;
