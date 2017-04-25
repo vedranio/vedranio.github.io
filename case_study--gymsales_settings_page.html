@@ -23,6 +23,10 @@
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
+
 		<!-- CASE STUDY INTRO -->
 		<div class="section section--medium">
 			<div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
@@ -47,7 +51,11 @@
 					<h3 class="h3-heading">Visual noise</h3>
 					<p>Unnecessary UI elements create visual noise and distract the user from completing their task.</p>
 
-					<img class="image--medium" src="resources/images/settings_page_problems1.png">
+					<div id="prob1-img-container" class="image--medium placeholder" data-large="resources/images/settings_page_problems1.png">
+						<img id="prob1-img-placeholder" class="img-small" src="resources/images/settings_page_problems1_PLACEHOLDER.png">
+						<div style="padding-bottom: 26.66%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('prob1-img-container','prob1-img-placeholder',"Visual clutter on existing site");</script>
 
 					<p>In the image above, you can see that the gym name is repeated, as is the label ‘General settings’. The horizontal divider lines are unnecessary – adequate separation can be better achieved through smart use of white space.</p>
 
@@ -56,7 +64,11 @@
 
 					<h3 class="h3-heading">Poor form structure</h3>
 					<p>The forms used in the settings page needed a lot of work.</p>
-					<img class="image--medium" src="resources/images/settings_page_problems2.png">
+					<div id="prob2-img-container" class="image--medium placeholder" data-large="resources/images/settings_page_problems2.png">
+						<img id="prob2-img-placeholder" class="img-small" src="resources/images/settings_page_problems2_PLACEHOLDER.png">
+						<div style="padding-bottom: 26.66%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('prob2-img-container','prob2-img-placeholder',"Issues with existing form structure");</script>
 					<ul class="list">
 						<li class="list__item">Two column layout requires the user’s eye to zig-zag through the form, which is harder than scanning straight down the page.</li>
 						<li class="list__item">Labels to the left of the field are generally understood to perform worse than labels on top of fields.</li>
@@ -71,7 +83,11 @@
 
 					<p>First up, I did some research to see how well known sites with complex settings pages solve this problem. I looked at Facebook, Slack and Google Inbox. You can see the screenshots <a class ="link link--on-light-bg link--inline" target="_blank" href="https://www.dropbox.com/sh/9dqjnvq03xwpqvi/AABZ_QtGZD9gz4nbVl8HvzR2a?dl=0">here</a>.</p>
 					<p>The common layouts were flat, tabbed and left hand side menu.</p>
-					<img class="image--medium image--with-caption" src="resources/images/settings_page_layouts.jpg">
+					<div id="layout-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/settings_page_layouts.jpg">
+						<img id="layout-img-placeholder" class="img-small" src="resources/images/settings_page_layouts_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 58.98%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('layout-img-container','layout-img-placeholder',"My sketch documenting the basic layouts in common use");</script>
 					<div class="image-caption">My sketch documenting the basic layouts in common use</div>
 
 			</div>
@@ -83,13 +99,27 @@
 					<p>In the context of GymSales, the most common layouts would look this.</p>
 					<h3 class="h3-heading">Flat page</h3>
 					<p>This design would require too much scrolling, and would quickly result in a settings page that is way too long.</p>
-					<img class="image--medium" src="resources/images/gs_settings_alt2.png">
+					<div id="alt2-img-container" class="image--medium placeholder" data-large="resources/images/gs_settings_alt2.png">
+						<img id="alt2-img-placeholder" class="img-small" src="resources/images/gs_settings_alt2_PLACEHOLDER.png">
+						<div style="padding-bottom: 86.82%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('alt2-img-container','alt2-img-placeholder',"Layout alternative 2");</script>
+
 					<h3 class="h3-heading">Horizontal tabs</h3>
 					<p>Sooner or later, we would run out of space for the horizontal tabs. This could be used for groups of settings sections, with a flat page within each one. However, we would still run the risk of having some very long pages.</p>
-					<img class="image--medium" src="resources/images/gs_settings_alt3.png">
+					<div id="alt3-img-container" class="image--medium placeholder" data-large="resources/images/gs_settings_alt3.png">
+						<img id="alt3-img-placeholder" class="img-small" src="resources/images/gs_settings_alt3_PLACEHOLDER.png">
+						<div style="padding-bottom: 86.82%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('alt3-img-container','alt3-img-placeholder',"Layout alternative 3");</script>
+
 					<h3 class="h3-heading">Left hand side menu</h3>
 					<p>This is the approach used by Facebook, amongst others, and provides most flexibility in terms of adding sections later on. Also, it is very easy to locate the items in the left hand menu.</p>
-					<img class="image--medium" src="resources/images/gs_settings_alt1.png">
+					<div id="alt1-img-container" class="image--medium placeholder" data-large="resources/images/gs_settings_alt1.png">
+						<img id="alt1-img-placeholder" class="img-small" src="resources/images/gs_settings_alt1_PLACEHOLDER.png">
+						<div style="padding-bottom: 86.82%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('alt1-img-container','alt1-img-placeholder',"Layout alternative 1");</script>
 
 			</div>
 
@@ -102,7 +132,11 @@
 						<li class="list__item">Form design is inline with best pracice, regarding layout and field labeling.</li>
 						<li class="list__item">Visually, the page is much cleaner that the original</li>
 					</ul>
-					<img class="image--medium" src="resources/images/gs_settings_page_long.png">
+					<div id="final-img-container" class="image--medium placeholder" data-large="resources/images/gs_settings_page_long.png">
+						<img id="final-img-placeholder" class="img-small" src="resources/images/gs_settings_page_long_PLACEHOLDER.png">
+						<div style="padding-bottom: 107.81%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('final-img-container','final-img-placeholder',"The final layout for the settings page");</script>
 			</div>
 
 			<div class="sub-section__content  sub-section--last-in-section">
