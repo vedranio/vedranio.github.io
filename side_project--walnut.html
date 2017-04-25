@@ -23,6 +23,9 @@
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
 
 		<div class="section section--medium">
 			<div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
@@ -40,7 +43,11 @@
 					<p>That was in 2011. To this date it has the most accurate perspective artwork visulisation of any similar apps.</p>
 					<br>
 
-					<img class="image--medium" src="resources/images/walnut_example.jpg">
+					<div id="walnut-img-container" class="image--medium placeholder" data-large="resources/images/walnut_example.jpg">
+						<img id="walnut-img-placeholder" class="img-small" src="resources/images/walnut_example_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 42.11%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('walnut-img-container','walnut-img-placeholder',"Walnut app in action");</script>
 			</div>
 			<div class="sub-section__content">
 					<h2 class="h2-heading">My motivation</h2>
