@@ -487,7 +487,7 @@ p {
   padding: 0;
   width: 100%;
   height: 40em;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/images/rubicon_design_workshop_2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%0A%20%20%20%20%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%0A%20%20%20%20%20width%3D%223264%22%20height%3D%222448%22%0A%20%20%20%20%20viewBox%3D%220%200%203264%202448%22%3E%0A%20%20%3Cfilter%20id%3D%22blur%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%0A%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2220%2020%22%20edgeMode%3D%22duplicate%22%20/%3E%0A%20%20%20%20%3CfeComponentTransfer%3E%0A%20%20%20%20%20%20%3CfeFuncA%20type%3D%22discrete%22%20tableValues%3D%221%201%22%20/%3E%0A%20%20%20%20%3C/feComponentTransfer%3E%0A%20%20%3C/filter%3E%0A%20%20%3Cimage%20filter%3D%22url%28%23blur%29%22%0A%20%20%20%20%20%20%20%20%20xlink%3Ahref%3D%22data%3Aimage/jpeg%3Bbase64%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%22%0A%20%20%20%20%20%20%20%20%20x%3D%220%22%20y%3D%220%22%0A%20%20%20%20%20%20%20%20%20height%3D%22100%25%22%20width%3D%22100%25%22/%3E%0A%3C/svg%3E);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -496,11 +496,43 @@ p {
     height: 50em;
   }
 }
+.my-work-item_full-width-image--rubicon-enhanced {
+  padding: 0;
+  width: 100%;
+  height: 40em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/images/rubicon_design_workshop_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: sharpen .5s both;
+  -moz-animation: sharpen .5s both;
+  animation: sharpen 0.5s both;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item_full-width-image--rubicon-enhanced {
+    height: 50em;
+  }
+}
+@-webkit-keyframes sharpen {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+@keyframes sharpen {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
 .my-work-item_full-width-image--kolektiv {
   padding: 0;
   width: 100%;
   height: 40em;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/images/kolektiv_watching_usability_testing_summary_video.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%0A%20%20%20%20%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%0A%20%20%20%20%20width%3D%223264%22%20height%3D%222448%22%0A%20%20%20%20%20viewBox%3D%220%200%203264%202448%22%3E%0A%20%20%3Cfilter%20id%3D%22blur%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%0A%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2220%2020%22%20edgeMode%3D%22duplicate%22%20/%3E%0A%20%20%20%20%3CfeComponentTransfer%3E%0A%20%20%20%20%20%20%3CfeFuncA%20type%3D%22discrete%22%20tableValues%3D%221%201%22%20/%3E%0A%20%20%20%20%3C/feComponentTransfer%3E%0A%20%20%3C/filter%3E%0A%20%20%3Cimage%20filter%3D%22url%28%23blur%29%22%0A%20%20%20%20%20%20%20%20%20xlink%3Ahref%3D%22data%3Aimage/jpeg%3Bbase64%2C/9j/4AAQSkZJRgABAQAASABIAAD/4QCMRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAACigAwAEAAAAAQAAAB4AAAAA/+0AOFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAAAOEJJTQQlAAAAAAAQ1B2M2Y8AsgTpgAmY7PhCfv/AABEIAB4AKAMBEgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2wBDAAMCAggICAgICAgHCAgIBwcHCAgHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwoHBwcICQkJBwcLDQoIDQcICQj/2wBDAQMEBAUFBgcFBQgICAcICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAj/3QAEAAX/2gAMAwEAAhEDEQA/APtG51SdeAwwOnBH8qoi6XOxnBOeMsMtweg6mgDMvfG90DgYPb72K5T4s2TpCHUlOeCpIOQwPUeqn9KAMPxj8bntrk2sqyGbbE5EY3qFnYhCXzt6hs85GPpXlF5aPJcwvIXdmtrUFmOSQLiZRk9Tjpk0Ae1fE67eyNusryTNcB9oiVVVdm3O4yN33DGFPer3x+8T2J+xSCUMsT3sTttf5XtWiWdcFQTsPHyg5xxmgCtbfD2+ljEvkEIVDAvI54PThEQfrX1dpHiS1+wx3PmRLai2WQyOyrGsYQZZixAUAdScUAf/0PqPxt8VtLdRBZxwRW++JzeThoHWYSDaYzNh3jZPlJyC27GMdfzXbTHlKPK5dsH7zSSBSjDBUSMwX+HhQANo9KAPs3x7+0lptxGLQXCGVJliOIpFiM5k8hYvtUm2ESF8gqWUDByRg18n3XhwyF3eV2M7KZlIVo5SpBXdER5fykZGFBzk9zQB9ew/sf6rqclpcTXkVnZwwbfIsG+03U5ZpWDyXccv2ZFCygqiRyFXUNvYcV8ga5e32nXely6fqd/ZmHR9J8xbWd7eOVo4pFQmCM/Z3SQKVkjkiYAKgUjnAB7/APtCfBuz0mSysp7vUo1vbmQpdTxPeWcd1PFFbRJcyiVGgeXy1cKgCSOzMQWfn7J/Ze8RzavollLqZS8lazsXkknhiJlme2VpZGRUWMMzkkFUXAOAFxigD4d+N3iLUdP0OztW1q1j0/abGXyrefz9QnWPHlG3kWR1tQoZ5BG2VwrGQqrKyf8ABUP4JnTbvTNTtLh1t7hZtPSzZi0dnLGkl0z2yEFBFcoriYMC+9IMHaMKAf/Z%22%0A%20%20%20%20%20%20%20%20%20x%3D%220%22%20y%3D%220%22%0A%20%20%20%20%20%20%20%20%20height%3D%22100%25%22%20width%3D%22100%25%22/%3E%0A%3C/svg%3E);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -509,8 +541,37 @@ p {
     height: 50em;
   }
 }
-.background-image--visible {
-  opacity: 1;
+.my-work-item_full-width-image--kolektiv-enhanced {
+  padding: 0;
+  width: 100%;
+  height: 40em;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/images/kolektiv_watching_usability_testing_summary_video.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: sharpen .5s both;
+  -moz-animation: sharpen .5s both;
+  animation: sharpen 0.5s both;
+}
+@media screen and (min-width: 900px) {
+  .my-work-item_full-width-image--kolektiv-enhanced {
+    height: 50em;
+  }
+}
+@-webkit-keyframes sharpen {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+@keyframes sharpen {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
 }
 .my-work-item__description--full-width-image {
   padding-top: 3em;
