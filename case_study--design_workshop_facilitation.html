@@ -23,6 +23,9 @@
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
 		<!-- CASE STUDY INTRO -->
 		<div class="section section--medium">
 			<div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
@@ -65,7 +68,11 @@
 					<h3 class="h3-heading">Day one</h3>
 					<p>The first day of the workshop was spent on discovery activities including empathy mapping and product mapping. This allowed the whole team, from the product owners to the developers and testers, to gain a common understanding of the problem we were trying to solve.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/rubicon_empathy_map.jpg">
+					<div id="empathy-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/rubicon_empathy_map.jpg">
+						<img id="empathy-img-placeholder" class="img-small" src="resources/images/rubicon_empathy_map_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('empathy-img-container','empathy-img-placeholder',"One of the Rubicon devs adding to our empathy map");</script>
 					<div class="image-caption">One of the Rubicon devs adding to our empathy map</div>
 
 					<p>Empathy mapping was particularly useful as it allowed the team to put themselves in the shoes of the end users. Later on, as we started getting into the design, we often reflected on what we discovered during empathy mapping.</p>
@@ -73,13 +80,21 @@
 					<h3 class="h3-heading">Day two</h3>
 					<p>Once we had a good understanding of the existing product and its audience, we spent the second day designing the product together. We used a couple of collaborative design techniques<a class ="link link--on-light-bg link--inline" target="_blank" href="https://medium.com/seek-user-experience/two-types-of-collaborative-design-sessions-46c6d7090b70#.vchxvmfst"> I wrote about before</a>, as well as a <a class ="link link--on-light-bg link--inline" target="_blank" href="https://medium.com/seek-user-experience/4-simple-steps-to-improve-your-ui-sketches-4ad2f1433373#.fecl4kbil">sketching technique</a> I had used a number of times.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/rubicon_design_sketching.jpg">
+					<div id="sketching-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/rubicon_design_sketching.jpg">
+						<img id="sketching-img-placeholder" class="img-small" src="resources/images/rubicon_design_sketching_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('sketching-img-container','sketching-img-placeholder',"The Rubicon team and the clients sketching together");</script>
 					<div class="image-caption">The Rubicon team and the clients sketching together</div>
 
 					<p>The key here was that everyone was inloved in the design. This was something new for both Rubicon and their clients.</p>
 					<p>At the end of the day, there was a feeling that we came up with some great ideas, but most importantly, that we were all involved in the design and decision making proces.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/rubicon_discussing_design.jpg">
+					<div id="discussing-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/rubicon_discussing_design.jpg">
+						<img id="discussing-img-placeholder" class="img-small" src="resources/images/rubicon_discussing_design_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('discussing-img-container','discussing-img-placeholder',"One of the clients presenting his designs");</script>
 					<div class="image-caption">One of the clients presenting his designs</div>
 			</div>
 
@@ -88,10 +103,18 @@
 
 					<p>With designs and user flows agreed upon, I took our sketches and started work on detailed wireframes. Designing in Sketch and prototyping with InVision, allowed me to turn around a full product low-fi prototype, and gather client feedback within three days.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/rubicon_sketch_wireframes.png">
+					<div id="wireframes-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/rubicon_sketch_wireframes.png">
+						<img id="wireframes-img-placeholder" class="img-small" src="resources/images/rubicon_sketch_wireframes_PLACEHOLDER.png">
+						<div style="padding-bottom: 77.44%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('wireframes-img-container','wireframes-img-placeholder',"Part of the Sketch file I produced as my final output");</script>
 					<div class="image-caption">Part of the Sketch file I produced as my final output</div>
 
-					<img class="image--medium" src="resources/images/rubicon_invision_prototype_sample.png">
+					<div id="sample-img-container" class="image--medium placeholder" data-large="resources/images/rubicon_invision_prototype_sample.png">
+						<img id="sample-img-placeholder" class="img-small" src="resources/images/rubicon_invision_prototype_sample_PLACEHOLDER.png">
+						<div style="padding-bottom: 41.6%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('sample-img-container','sample-img-placeholder');</script>
 
 					<p>The visual design for this product was handed over to a designer in The Netherlands and is not shown here.</p>
 			</div>
