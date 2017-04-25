@@ -23,6 +23,9 @@
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
 		<!-- CASE STUDY INTRO -->
 		<div class="section section--medium">
 			<div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
@@ -63,23 +66,40 @@
 					<div class="sub-section__content sub-section__content--no-margins">
 						<h3 class="h3-heading">Elements logically morph into each other</h3>
 						<p>Where it makes sense, elements morph into each other. This is preferred to elements dissapearing and new ones appearing as it enhances the feeling of continuity.</p>
-						<img class="animation-example" src="resources/images/button_morph_animation.gif">
+						<div id="buttonmorph-img-container" class="animation-example placeholder" data-large="resources/images/button_morph_animation.gif">
+							<img id="buttonmorph-img-placeholder" class="img-small" src="resources/images/button_morph_animation_PLACEHOLDER.gif">
+							<div style="padding-bottom: 133.42%;"></div>
+						</div>
+						<script type="text/javascript">lazyLoadImage('buttonmorph-img-container','buttonmorph-img-placeholder',"Animation showing button morphing");</script>
 					</div>
 
 					<div class="sub-section__content sub-section__content--no-margins">
 						<h3 class="h3-heading">Object origin</h3>
 						<p>Objects don’t just appear on the screen. They have a point of origin, and a destination. This allows them to enter and leave the screen in an orchestrated manner.</p>
-						<img class="animation-example" src="resources/images/elements_appearing.gif">
+						<div id="elements-img-container" class="animation-example placeholder" data-large="resources/images/elements_appearing.gif">
+							<img id="elements-img-placeholder" class="img-small" src="resources/images/elements_appearing_PLACEHOLDER.gif">
+							<div style="padding-bottom: 133.42%;"></div>
+						</div>
+						<script type="text/javascript">lazyLoadImage('elements-img-container','elements-img-placeholder',"Animation of elements appearing on page");</script>
 					</div>
 					<div class="sub-section__content sub-section__content--no-margins">
 						<h3 class="h3-heading">Animation continuity</h3>
 						<p>Movement of individual elements overlaps by a 0.2s, in order to create a sense of smooth continuity.</p>
-						<img class="image--medium" src="resources/images/animation_overlap.png">
+						<div id="overlap-img-container" class="image--medium placeholder" data-large="resources/images/animation_overlap.png">
+							<img id="overlap-img-placeholder" class="img-small" src="resources/images/animation_overlap_PLACEHOLDER.png">
+							<div style="padding-bottom: 45.51%;"></div>
+						</div>
+						<script type="text/javascript">lazyLoadImage('overlap-img-container','overlap-img-placeholder',"Showing animation overlap");</script>
 					</div>
 					<div class="sub-section__content sub-section__content--no-margins">
 						<h3 class="h3-heading">Breaking animation consistency for emphasis</h3>
 						<p>All animations use an ease-in/ease-out curve with the exception of error messages. Error messages spring onto the screen in order to create emphasis.</p>
-						<img class="animation-example" src="resources/images/error_animation.gif">
+						<div id="error-img-container" class="animation-example placeholder" data-large="resources/images/error_animation.gif">
+							<img id="error-img-placeholder" class="img-small" src="resources/images/error_animation_PLACEHOLDER.gif">
+							<div style="padding-bottom: 133.42%;"></div>
+						</div>
+						<script type="text/javascript">lazyLoadImage('error-img-container','error-img-placeholder',"Animation of error message appearing");</script>
+
 					</div>
 			</div>
 			<div class="sub-section__content">
@@ -87,13 +107,21 @@
 
 					<p>From my research, I knew that the existing forms were physically cramped and difficult to fill out – I didn't want this application to feel like a form, hence I opted to use large, oversized elements, such as the input fields, action buttons and links.</p>
 
-					<img class="image--medium" src="resources/images/input_element_dimensions.png">
+					<div id="input-img-container" class="image--medium placeholder" data-large="resources/images/input_element_dimensions.png">
+						<img id="input-img-placeholder" class="img-small" src="resources/images/input_element_dimensions_PLACEHOLDER.png">
+						<div style="padding-bottom: 76.30%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('input-img-container','input-img-placeholder',"Showing oversized inputs");</script>
 			</div>
 			<div class="sub-section__content">
 					<h2 class="h2-heading">Usability testing</h2>
 
 					<p>I improvised in order to recruit subjects for my usability testing – I reached out to friends and acquaintances who joined a gym within the last year. I managed to find three people very quickly and tested the app prototype.</p>
-					<img class="image--medium image--with-caption" src="/resources/images/visitor_registration_user_testing.JPG">
+					<div id="user-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/visitor_registration_user_testing.JPG">
+						<img id="user-img-placeholder" class="img-small" src="resources/images/visitor_registration_user_testing_PLACEHOLDER.JPG">
+						<div style="padding-bottom: 66.8%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('user-img-container','user-img-placeholder',"Usability testing with a friend");</script>
 					<div class="image-caption">Usability testing with a friend</div>
 					<p>The key change made after the usability testing was to provide explanation as to why the phone number was needed – some people were uncomfortable with providing this information.</p>
 
@@ -104,7 +132,11 @@
 					<p>Finally, I had to make sure that the visual design can accomodate different branding, as this app was to be used by different gyms.</p>
 					<p>I created a set of guidelines to make sure that different colour schemes could be applied to the app, while keeping text accessible and maintaining the app‘s visual identity.</p>
 
-					<img class="image--medium" src="resources/images/branding.png">
+					<div id="branding-img-container" class="image--medium placeholder" data-large="resources/images/branding.png">
+						<img id="branding-img-placeholder" class="img-small" src="resources/images/branding_PLACEHOLDER.png">
+						<div style="padding-bottom: 66.89%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('branding-img-container','branding-img-placeholder',"Branding for different gyms");</script>
 
 
 			</div>
