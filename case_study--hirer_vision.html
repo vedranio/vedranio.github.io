@@ -23,6 +23,10 @@
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
+
 		<!-- CASE STUDY INTRO -->
 		<div class="section section--medium">
 			<div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
@@ -70,33 +74,64 @@
 
 					<h3 class="h3-heading">Step 2. user journey mapping workshops</h3>
 					<p>Prior to the workshops, I defined the format of the journey map we wanted to walk away with.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_map_design.jpg">
+					<div id="mapdesign-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_map_design.jpg">
+						<img id="mapdesign-img-placeholder" class="img-small" src="resources/images/vision_map_design_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 70.7%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('mapdesign-img-container','mapdesign-img-placeholder',"The proposed journey map format");</script>
 					<div class="image-caption">The proposed journey map format</div>
+
 					<p>The workshops were tightly timed, as I had to run nine of them, with around ten people in each.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_creating_journey_map_2.jpg">
+					<div id="creating-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_creating_journey_map_2.jpg">
+						<img id="creating-img-placeholder" class="img-small" src="resources/images/vision_creating_journey_map_2_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('creating-img-container','creating-img-placeholder',"Creating the journey map together");</script>
 					<div class="image-caption">Creating the journey map together</div>
+
 					<p>At the end of each workshop, we had a large amount of information that had to be synthesised into something that could be shared with the wider team.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_creating_journey_map.jpg">
+					<div id="output-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_creating_journey_map.jpg">
+						<img id="output-img-placeholder" class="img-small" src="resources/images/vision_creating_journey_map_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('output-img-container','output-img-placeholder',"Journey map workshop output");</script>
 					<div class="image-caption">Journey map workshop output</div>
 
 					<h3 class="h3-heading">Step 3. creating detailed journey maps</h3>
 					<p>Based on the output of the workshops, I created three detailed journey maps, each covering a different user segment.</p>
 					<p>The format I came up with covered pain points, opportunities, products and aspirational touch points.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_journey_map.png">
+					<div id="map-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_journey_map.png">
+						<img id="map-img-placeholder" class="img-small" src="resources/images/vision_journey_map_PLACEHOLDER.png">
+						<div style="padding-bottom: 50%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('map-img-container','map-img-placeholder',"Detailed journey map");</script>
 					<div class="image-caption">Detailed journey map (deliberately blurry due to commercially sensitve nature of the content)</div>
+
 					<p>Each touch-point described how the user would interact with SEEK and contained a progress bar indicating how well we belived we understood the problem space as well as a reference to a wireframe, if relevant.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_journey_map_sample.png">
+					<div id="sample-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_journey_map_sample.png">
+						<img id="sample-img-placeholder" class="img-small" src="resources/images/vision_journey_map_sample_PLACEHOLDER.png">
+						<div style="padding-bottom: 73.73%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('sample-img-container','sample-img-placeholder',"Journey map touch point");</script>
 					<div class="image-caption">Journey map touch point</div>
 
 					<h3 class="h3-heading">Step 4. creating wireframes</h3>
 					<p>During the workshops, we identified touchpoints where we belived it would be valuable to see more detail. For these touchpoints, I came up with high level wireframes to illustrate how they might play out.</p>
 					<p>It was important to keep these at a high enough level to reflect the uncertainty we had around them, while providing enough detail for them to be useful.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_mockups.png">
+					<div id="mockups-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_mockups.png">
+						<img id="mockups-img-placeholder" class="img-small" src="resources/images/vision_mockups_PLACEHOLDER.png">
+						<div style="padding-bottom: 45.41%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('mockups-img-container','mockups-img-placeholder',"Wireframes to support touch points on the journey map");</script>
 					<div class="image-caption">Wireframes to support touch points on the journey map</div>
 
 					<h3 class="h3-heading">Step 5. review journey maps and wireframes</h3>
 					<p>I had a lot of stakeholders to review the journey maps with, so I organised another round of workshops to do that. Once I collected and analysed all the feedback, it was a matter of updating the journey maps and wireframes and sharing the final output with the teams.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_reviewing_journey_map.jpg">
+					<div id="review-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_reviewing_journey_map.jpg">
+						<img id="review-img-placeholder" class="img-small" src="resources/images/vision_reviewing_journey_map_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('review-img-container','review-img-placeholder',"Collecting feedback on draft journey maps");</script>
 					<div class="image-caption">Collecting feedback on draft journey maps</div>
 
 			</div>
@@ -107,14 +142,27 @@
 
 					<h3 class="h3-heading">Step 1. mapping out the narrative</h3>
 					<p>First, we mapped out a story we wanted to create the video for.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_starting_out.jpg">
+					<div id="storyline-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_starting_out.jpg">
+						<img id="storyline-img-placeholder" class="img-small" src="resources/images/vision_starting_out_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 39.36%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('storyline-img-container','storyline-img-placeholder',"Mapping out the video storyline");</script>
 					<div class="image-caption">Mapping out the video storyline</div>
 
 					<h3 class="h3-heading">Step 2. draw storyboard images</h3>
 					<p>I'm lucky to work with a designer who is amazing at creating illustrations – he created an illustration for each scene, which we then touched up in Photoshop.</p>
-					<img class="image--medium image--with-caption" src="resources/images/vision_creating_story_boards.jpg">
+					<div id="scott-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_creating_story_boards.jpg">
+						<img id="scott-img-placeholder" class="img-small" src="resources/images/vision_creating_story_boards_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('scott-img-container','scott-img-placeholder',"My colleague Scott working on storyboard images");</script>
 					<div class="image-caption">My colleague Scott working on storyboard images</div>
-					<img class="image--medium image--with-caption" src="resources/images/vision_story_boards.jpg">
+
+					<div id="storyboards-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/vision_story_boards.jpg">
+						<img id="storyboards-img-placeholder" class="img-small" src="resources/images/vision_story_boards_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('storyboards-img-container','storyboards-img-placeholder',"Some of the scenes from the video");</script>
 					<div class="image-caption">Some of the scenes</div>
 
 					<h3 class="h3-heading">Step 3. produce video</h3>
