@@ -23,6 +23,9 @@
 		<script type="text/javascript" src="/js/sticky_nav.js"></script>
 		<script type="text/javascript">formatStickyNav("@colour-light-gray");</script>
 
+		<!-- lazy load images -->
+		<script src="js/lazy_img.js"></script>
+
 		<!-- CASE STUDY INTRO -->
 		<div class="section section--medium">
 			<div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
@@ -50,7 +53,11 @@
 					<p>I started with education about usability testing; what it was, why it was useful, how to conduct usability tests and how to analyse the results.</p>
 					<p>We quickly turned to the practical side of things; the team recruited some users, we wrote a test script together and ran a couple of internal sessions to give everyone some practice and much needed confidence.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/kolektiv_organising_usability_testing_results.jpg">
+					<div id="results-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/kolektiv_organising_usability_testing_results.jpg">
+						<img id="results-img-placeholder" class="img-small" src="resources/images/kolektiv_organising_usability_testing_results_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('results-img-container','results-img-placeholder',"Teaching Team Kolektiv designers to organise usability test results");</script>
 					<div class="image-caption">Teaching Team Kolektiv designers to organise usability test results</div>
 
 					<p>The testing setup was kept fairly simple:</p>
@@ -69,7 +76,11 @@
 					<p>Once we wrapped up all the sessions, we organised and summarised our notes. I prepared a report and a presentation higlighting the key findings.</p>
 					<p>I also put together a 20 minute highlights reel of footage from the testing sessions. This was the most valuable output as it allowed a wider audience, including the marketing and sales teams, as well as the CEO to see the results of the testing, first hand.</p>
 
-					<img class="image--medium image--with-caption" src="resources/images/kolektiv_watching_usability_testing_summary_video.jpg">
+					<div id="video-img-container" class="image--medium image--with-caption placeholder" data-large="resources/images/kolektiv_watching_usability_testing_summary_video.jpg">
+						<img id="video-img-placeholder" class="img-small" src="resources/images/kolektiv_watching_usability_testing_summary_video_PLACEHOLDER.jpg">
+						<div style="padding-bottom: 75%;"></div>
+					</div>
+					<script type="text/javascript">lazyLoadImage('video-img-container','video-img-placeholder',"Team Kolektiv watching usability testing highlights reel");</script>
 					<div class="image-caption">Team Kolektiv watching usability testing highlights reel</div>
 
 					<p>The team’s reactions ranged from laughter to shock and disbelief – seeing real users interact with your product is always a powerful experience.</p>
