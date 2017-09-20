@@ -1144,6 +1144,109 @@ span.side-project-name span {
                                   supported by Chrome and Opera */
 }
 
+// Z
+
+.z-nav-header-content{
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: @screen-large) {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.z-nav {
+
+  display: none;
+
+  @media screen and (min-width: @screen-large) {
+    display: flex;
+    background-color: #0D3161;
+    width: 260px;
+    min-width: 260px;
+    height: 200vh;
+    color: white;
+    padding: 75px 30px 0px 30px;
+    box-sizing: border-box;
+  }
+}
+
+.z-header-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.z-header{
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #0D3161;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+  height: 60px;
+  z-index: 1;
+  padding: 0px 160px 0px ~"calc(10% + 30px)";
+
+  @media screen and (min-width: 600px) {
+    align-items: baseline;
+    background-color: white;
+    color: black;
+    height: 200px;
+    max-height: 200px;
+    padding: 75px 160px 0px 30px;
+  }
+
+  @media screen and (min-width: @screen-large) {
+    padding: 75px 160px 0px ~"calc(10% + 30px)";
+  }
+}
+
+.z-header__menu{
+
+
+  @media screen and (min-width: 600px) {
+    display: inline-flex;
+    color: blue;
+    text-decoration: underline;
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: @screen-large) {
+    display: none;
+  }
+
+}
+
+.z-content{
+  display: flex;
+  height: 100%;
+  background-color: #FBFBFB;
+  justify-content: space-around;
+
+  padding: 50px 10% 50px 10%;
+
+}
+.z-row{
+  display: flex;
+  flex-direction: row;
+}
+.z-col{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.z-card{
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+  flex-grow: 1;
+  padding: 20px 30px 40px 30px;
+  margin: 0 10px 20px 10px;
+  min-height: 200px;
+}
+
 // animation for 404 page
 
 .text-flicker-in-glow {

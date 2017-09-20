@@ -928,6 +928,99 @@ span.side-project-name span {
   /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+.z-nav-header-content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 900px) {
+  .z-nav-header-content {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.z-nav {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .z-nav {
+    display: flex;
+    background-color: #0D3161;
+    width: 260px;
+    min-width: 260px;
+    height: 200vh;
+    color: white;
+    padding: 75px 30px 0px 30px;
+    box-sizing: border-box;
+  }
+}
+.z-header-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.z-header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #0D3161;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  height: 60px;
+  z-index: 1;
+  padding: 0px 160px 0px calc(10% + 30px);
+}
+@media screen and (min-width: 600px) {
+  .z-header {
+    align-items: baseline;
+    background-color: white;
+    color: black;
+    height: 200px;
+    max-height: 200px;
+    padding: 75px 160px 0px 30px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .z-header {
+    padding: 75px 160px 0px calc(10% + 30px);
+  }
+}
+@media screen and (min-width: 600px) {
+  .z-header__menu {
+    display: inline-flex;
+    color: blue;
+    text-decoration: underline;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .z-header__menu {
+    display: none;
+  }
+}
+.z-content {
+  display: flex;
+  height: 100%;
+  background-color: #FBFBFB;
+  justify-content: space-around;
+  padding: 50px 10% 50px 10%;
+}
+.z-row {
+  display: flex;
+  flex-direction: row;
+}
+.z-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.z-card {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  padding: 20px 30px 40px 30px;
+  margin: 0 10px 20px 10px;
+  min-height: 200px;
+}
 .text-flicker-in-glow {
   -webkit-animation: text-flicker-in-glow 3s linear 250ms both;
   -moz-animation: text-flicker-in-glow 3s linear 250ms both;
