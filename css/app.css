@@ -967,7 +967,7 @@ span.side-project-name span {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   height: 60px;
   z-index: 1;
-  padding: 0px 160px 0px calc(10% + 30px);
+  padding: 0px 160px 0px 20px;
 }
 @media screen and (min-width: 600px) {
   .z-header {
@@ -984,12 +984,16 @@ span.side-project-name span {
     padding: 75px 160px 0px calc(10% + 30px);
   }
 }
+.z-header__menu {
+  display: inline-flex;
+  margin-right: calc(50% - 20px);
+}
 @media screen and (min-width: 600px) {
   .z-header__menu {
     display: inline-flex;
     color: blue;
-    text-decoration: underline;
     margin-right: 30px;
+    text-decoration: none;
   }
 }
 @media screen and (min-width: 900px) {
@@ -1002,11 +1006,20 @@ span.side-project-name span {
   height: 100%;
   background-color: #FBFBFB;
   justify-content: space-around;
-  padding: 50px 10% 50px 10%;
+  padding: 40px 0 40px 0;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+@media screen and (min-width: 600px) {
+  .z-content {
+    padding: 50px 10% 50px 10%;
+    margin: 0;
+  }
 }
 .z-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .z-col {
   display: flex;
@@ -1020,6 +1033,7 @@ span.side-project-name span {
   padding: 20px 30px 40px 30px;
   margin: 0 10px 20px 10px;
   min-height: 200px;
+  min-width: 250px;
 }
 .text-flicker-in-glow {
   -webkit-animation: text-flicker-in-glow 3s linear 250ms both;
