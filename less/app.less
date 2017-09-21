@@ -1149,6 +1149,7 @@ span.side-project-name span {
 .z-nav-header-content{
   display: flex;
   flex-direction: column;
+  background-color: #0D3161;
 
   @media screen and (min-width: @screen-large) {
     flex-direction: row;
@@ -1167,7 +1168,7 @@ span.side-project-name span {
     min-width: 260px;
     height: 200vh;
     color: white;
-    padding: 75px 30px 0px 30px;
+    padding: 83px 30px 0px 30px;
     box-sizing: border-box;
   }
 }
@@ -1196,11 +1197,12 @@ span.side-project-name span {
     color: black;
     height: 200px;
     max-height: 200px;
+    min-height: 200px;
     padding: 75px 160px 0px 30px;
   }
 
   @media screen and (min-width: @screen-large) {
-    padding: 75px 160px 0px ~"calc(10% + 30px)";
+    padding: 75px 160px 0px ~"calc(10% + 37px)";
   }
 }
 
@@ -1208,18 +1210,33 @@ span.side-project-name span {
 
   display: inline-flex;
   margin-right: ~"calc(50% - 20px)";
+  padding-left: 10px;
+  min-width: 80px;
+  font-size: 14px;
 
   @media screen and (min-width: 600px) {
     display: inline-flex;
     color: blue;
     margin-right: 30px;
+    padding-left: 0;
     text-decoration: none;
+    font-size: 18px;
   }
 
   @media screen and (min-width: @screen-large) {
     display: none;
   }
 
+}
+
+.z-header__heading{
+  display: inline-flex;
+
+  @media screen and (min-width: 600px) {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+  }
 }
 
 .z-content{
@@ -1243,20 +1260,38 @@ span.side-project-name span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
+
 .z-col{
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 .z-card{
   background-color: white;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
   flex-grow: 1;
+  box-sizing: border-box;
   padding: 20px 30px 40px 30px;
   margin: 0 10px 20px 10px;
   min-height: 200px;
   min-width: 250px;
+}
+
+.z-card__heading{
+  font-size: 24px;
+  line-height: 30px;
+  // font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.z-card__content{
+  font-size: 18px;
 }
 
 // animation for 404 page
