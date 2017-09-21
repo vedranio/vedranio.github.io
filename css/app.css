@@ -969,9 +969,12 @@ span.side-project-name span {
   height: 60px;
   z-index: 1;
   padding: 0px 160px 0px 20px;
+  position: fixed;
+  width: 100%;
 }
 @media screen and (min-width: 600px) {
   .z-header {
+    position: relative;
     align-items: baseline;
     background-color: white;
     color: black;
@@ -1023,7 +1026,7 @@ span.side-project-name span {
   height: 100%;
   background-color: #FBFBFB;
   justify-content: space-around;
-  padding: 40px 0 40px 0;
+  padding: 100px 0 40px 0;
   margin-right: -10px;
   margin-left: -10px;
 }
