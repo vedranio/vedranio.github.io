@@ -1053,13 +1053,14 @@ span.side-project-name span {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   flex-grow: 1;
   box-sizing: border-box;
-  padding: 20px 30px 40px 30px;
+  padding: 40px 30px 40px 30px;
   margin: 0 10px 20px 10px;
   min-height: 200px;
   min-width: 250px;
 }
 .z-card__heading {
-  font-size: 24px;
+  font-size: 21px;
+  font-weight: bold;
   line-height: 30px;
   margin-bottom: 20px;
 }
