@@ -3,6 +3,9 @@ var less = require('gulp-less');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 var sitemap = require('gulp-sitemap');
+var postcss = require('gulp-postcss');
+var sourcemaps  = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer');
 
 
 // optimise images
@@ -23,6 +26,15 @@ gulp.task('less', function(){
     }))
 })
 
+//autoprefix css
+gulp.task('autoprefix', function () {
+    return gulp.src('css/**/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([ autoprefixer() ]))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('css'));
+});
+
 //build/update the sitemap
 gulp.task('sitemap', function () {
     gulp.src(['./*.html', './side_projects/**/*.html'], {
@@ -37,7 +49,7 @@ gulp.task('sitemap', function () {
 
 
 //watch files for changes
-gulp.task('serve', ['less', 'images', 'sitemap', 'browserSync'], function(){
+gulp.task('serve', ['less', 'autoprefix','images', 'sitemap', 'browserSync'], function(){
   gulp.watch('less/**/*.less', ['less']);
   gulp.watch('*.html', browserSync.reload);
 })
