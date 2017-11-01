@@ -3,4 +3,6 @@ Disallow: /resources/axure_libraries/
 Disallow: /resources/documents/Vedran-Arnautovic–Resume-2017.pdf
 Disallow: /documentation/
 Disallow: /z.html
+Disallow: /vedmas
+Disallow: /for-SEEK
 Sitemap: http://www.vedran.io/sitemap.xml
