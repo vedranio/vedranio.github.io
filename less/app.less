@@ -1318,9 +1318,14 @@ span.side-project-name span {
 }
 
 .tennisChartWrapper iframe {
-	width: 100%;
+	width: 200%;
 	height: 100%;
   border: 0;
+  margin-left: ~"calc(-1*(300px - 45vw))";
+
+  @media screen and (min-width: 600px) {
+      margin-left: -140px;
+  }
 
 }
 

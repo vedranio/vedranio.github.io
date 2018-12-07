@@ -1089,9 +1089,15 @@ span.side-project-name span {
   background-repeat: repeat;
 }
 .tennisChartWrapper iframe {
-  width: 100%;
+  width: 200%;
   height: 100%;
   border: 0;
+  margin-left: calc(-1*(300px - 45vw));
+}
+@media screen and (min-width: 600px) {
+  .tennisChartWrapper iframe {
+    margin-left: -140px;
+  }
 }
 .text-flicker-in-glow {
   -webkit-animation: text-flicker-in-glow 3s linear 250ms both;
