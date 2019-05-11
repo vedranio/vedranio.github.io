@@ -5,4 +5,5 @@ Disallow: /documentation/
 Disallow: /z.html
 Disallow: /vedmas
 Disallow: /for-SEEK
+Disallow: /happy-mothers-day
 Sitemap: http://www.vedran.io/sitemap.xml
