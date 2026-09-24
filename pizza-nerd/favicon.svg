@@ -1,16 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- The loading screen's slice: a rounded triangle tipped slightly to the top right, on the
-       screen background. Colours follow the system scheme like the app does. -->
-  <style>
-    .bg { fill: #fbf7f0; }
-    .slice { fill: #c2410c; stroke: #c2410c; }
-    @media (prefers-color-scheme: dark) {
-      .bg { fill: #16120f; }
-      .slice { fill: #fb923c; stroke: #fb923c; }
-    }
-  </style>
-  <rect class="bg" width="64" height="64" rx="14" />
-  <g transform="rotate(10 32 36)">
-    <path class="slice" d="M32 13 L50 51 L14 51 Z" stroke-width="4" stroke-linejoin="round" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#D63A24" />
+  <circle cx="470" cy="42" r="260" fill="#F2B632" />
+  <circle cx="430" cy="130" r="95" fill="#F2EAD8" />
+  <circle cx="400" cy="230" r="34" fill="#1F6B4A" />
 </svg>
