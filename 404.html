@@ -9,6 +9,22 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="public"/>
+		<script>
+			// Single-page apps under this site have routes GitHub Pages knows nothing about
+			// (for example /pizza-nerd/recipe). Hand such a path back to the app's index page,
+			// which restores the route itself. Everything else gets the normal 404 below.
+			(function () {
+				var apps = ['/pizza-nerd/'];
+				var path = window.location.pathname;
+				for (var i = 0; i < apps.length; i++) {
+					if (path.indexOf(apps[i]) === 0 && path !== apps[i]) {
+						var route = path.slice(apps[i].length - 1);
+						window.location.replace(apps[i] + '?p=' + encodeURIComponent(route) + window.location.hash);
+						return;
+					}
+				}
+			})();
+		</script>
 	</head>
 	<body>
 		<div class="section section--medium">
