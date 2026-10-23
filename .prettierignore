@@ -1,0 +1,12 @@
+dist/
+.astro/
+public/
+src/assets/
+tests/__screenshots__/
+.lighthouseci/
+playwright-report/
+test-results/
+package-lock.json
+# Astro pages and components are not auto-formatted: the site's layout depends
+# on the exact whitespace between inline elements, which formatting changes.
+*.astro

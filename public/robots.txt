@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /resources/axure_libraries/
+Disallow: /resources/documents/Vedran-Arnautovic–Resume-2017.pdf
+Disallow: /case_study--visitor_registration_app
+Disallow: /case_study--design_sprint
+Disallow: /case_study--hirer_vision
+Disallow: /case_study--design_workshop_facilitation
+Disallow: /case_study--credit_card_form_redesign
+Disallow: /case_study--usability_testing_with_kolektiv
+Disallow: /case_study--gymsales_settings_page
+Sitemap: https://www.vedran.io/sitemap.xml
