@@ -21,6 +21,7 @@ body {
   line-height: 1.5em;
   font-weight: 100;
   margin: 0px;
+  background-color: var(--colour-white);
 }
 h1,
 h2,
