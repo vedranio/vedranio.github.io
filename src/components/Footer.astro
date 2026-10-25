@@ -1,0 +1,33 @@
+---
+/**
+ * Site footer: the copy-email button (see scripts/copy-email.js) and social links.
+ * As in the nav, the whitespace between the inline links is deliberate.
+ */
+interface Props {
+  linkedIn?: string;
+}
+
+const email = 'hello@vedran.io';
+const { linkedIn = 'https://www.linkedin.com/in/vedran-arnautovic-design' } = Astro.props;
+const links = [
+  { label: 'Medium', href: 'https://medium.com/@vedranio' },
+  { label: 'LinkedIn', href: linkedIn },
+  { label: 'GitHub', href: 'https://github.com/vedranio' },
+];
+---
+
+<div id="footer"></div>
+<div class="footer section--dark footer__content">
+  <div class="section__content noselect">
+    <div id="email-bttn" class="bttn bttn--almost-black bttn--email">
+      <span class="bttn__label" id="email-label" data-copy-email data-clipboard-text={email}>{email}</span>
+    </div>
+    {links.map((link) => (
+      <Fragment>{'\n'}<a class="link link--on-dark-bg link__footer" target="_blank" href={link.href}>{link.label}</a></Fragment>
+    ))}
+  </div>
+</div>
+
+<script>
+  import '../scripts/copy-email.js';
+</script>

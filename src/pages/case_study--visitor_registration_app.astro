@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LazyImage from '../components/LazyImage.astro';
+import img0 from '../assets/images/button_morph_animation.gif';
+import img1 from '../assets/images/button_morph_animation_PLACEHOLDER.gif';
+import img2 from '../assets/images/elements_appearing.gif';
+import img3 from '../assets/images/elements_appearing_PLACEHOLDER.gif';
+import img4 from '../assets/images/animation_overlap.png';
+import img5 from '../assets/images/animation_overlap_PLACEHOLDER.png';
+import img6 from '../assets/images/error_animation.gif';
+import img7 from '../assets/images/error_animation_PLACEHOLDER.gif';
+import img8 from '../assets/images/input_element_dimensions.png';
+import img9 from '../assets/images/input_element_dimensions_PLACEHOLDER.png';
+import img10 from '../assets/images/visitor_registration_user_testing.JPG';
+import img11 from '../assets/images/visitor_registration_user_testing_PLACEHOLDER.jpg';
+import img12 from '../assets/images/branding.png';
+import img13 from '../assets/images/branding_PLACEHOLDER.png';
+---
+
+<BaseLayout title="Visitor registration iPad app | by Vedran Arnautovic" navBg="light-gray" current="work" footerLinkedIn="https://www.linkedin.com/in/vedran-arnautovic-716a1b128">
+  {/* CASE STUDY INTRO */}
+  <div class="section section--medium">
+    <div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
+      <h1 class="h1-heading">Visitor registration app</h1>
+        <p><a class="link link--on-light-bg link--inline" target="_blank" href="http://gymsales.net">GymSales</a> are a provider of lead and member management software for gyms and fitness centres. They wanted to extend their product set to include an iPad application for management of visitor registrations.</p>
+    </div>
+  </div>
+
+  <div class="section section--light ">
+    <div class="sub-section__content sub-section--first-in-section">
+        <h2 class="h2-heading">The challenge</h2>
+
+        <p>Gym receptions are busy places. Multiple instructors are meeting their students, loud music is playing, phones are ringing.</p>
+        <p>GymSales wanted to provide gym visitors with a quick and painless way to register as visitors, while meeting gyms’ data and legal requirements. Therein lied the biggest challenge for the project: how to collect all the data required, while keeping the process of registering quick and simple?</p>
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">Research</h2>
+
+        <p>I hit the streets and walked to three different gyms where I signed up as a visitor in order to experience the registration process. The main learnings were:</p>
+        <ul class="list">
+          <li class="list__item">They all used paper forms</li>
+          <li class="list__item">The forms often did not allow enough space for the required information</li>
+          <li class="list__item">The space allocated to completion of forms was inadequate</li>
+          <li class="list__item">The amount of information asked for was overwhelming</li>
+        </ul>
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">Simplify from the start</h2>
+
+        <p>Before starting to design, I talked to the client about minimising the amount of inofmation we collect.</p>
+        <p>The principle we ended up agreeing on is that if the information was not required during the 'visitor' period, we did not need to collect it with this app. Any information that was required for full members would be collected once (if) they signed up as full members.</p>
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">Animation and the perception of effortlessness</h2>
+
+        <p>I was keen for the process of registering to feel as effortless as possible. Once the amount of information was minimised, I turned to animation design, using <a class="link link--on-light-bg link--inline" href="http://principleformac.com/">Principle</a>, in order to come up with screen transitions which gave the impression of speed, smooth movement and progress.</p>
+
+        <div class="sub-section__content sub-section__content--no-margins">
+          <h3 class="h3-heading">Elements logically morph into each other</h3>
+          <p>Where it makes sense, elements morph into each other. This is preferred to elements dissapearing and new ones appearing as it enhances the feeling of continuity.</p>
+          <LazyImage id="buttonmorph-img-container" placeholderId="buttonmorph-img-placeholder" class="animation-example" large={img0} placeholder={img1} alt="Animation showing button morphing" ratio="133.42%" />
+        </div>
+
+        <div class="sub-section__content sub-section__content--no-margins">
+          <h3 class="h3-heading">Object origin</h3>
+          <p>Objects don’t just appear on the screen. They have a point of origin, and a destination. This allows them to enter and leave the screen in an orchestrated manner.</p>
+          <LazyImage id="elements-img-container" placeholderId="elements-img-placeholder" class="animation-example" large={img2} placeholder={img3} alt="Animation of elements appearing on page" ratio="133.42%" />
+        </div>
+        <div class="sub-section__content sub-section__content--no-margins">
+          <h3 class="h3-heading">Animation continuity</h3>
+          <p>Movement of individual elements overlaps by a 0.2s, in order to create a sense of smooth continuity.</p>
+          <LazyImage id="overlap-img-container" placeholderId="overlap-img-placeholder" class="image--medium" large={img4} placeholder={img5} alt="Showing animation overlap" ratio="45.51%" />
+        </div>
+        <div class="sub-section__content sub-section__content--no-margins">
+          <h3 class="h3-heading">Breaking animation consistency for emphasis</h3>
+          <p>All animations use an ease-in/ease-out curve with the exception of error messages. Error messages spring onto the screen in order to create emphasis.</p>
+          <LazyImage id="error-img-container" placeholderId="error-img-placeholder" class="animation-example" large={img6} placeholder={img7} alt="Animation of error message appearing" ratio="133.42%" />
+
+        </div>
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">Oversized input controls</h2>
+
+        <p>From my research, I knew that the existing forms were physically cramped and difficult to fill out – I didn't want this application to feel like a form, hence I opted to use large, oversized elements, such as the input fields, action buttons and links.</p>
+
+        <LazyImage id="input-img-container" placeholderId="input-img-placeholder" class="image--medium" large={img8} placeholder={img9} alt="Showing oversized inputs" ratio="76.30%" />
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">Usability testing</h2>
+
+        <p>I improvised in order to recruit subjects for my usability testing – I reached out to friends and acquaintances who joined a gym within the last year. I managed to find three people very quickly and tested the app prototype.</p>
+        <LazyImage id="user-img-container" placeholderId="user-img-placeholder" class="image--medium image--with-caption" large={img10} placeholder={img11} alt="Usability testing with a friend" ratio="66.8%" />
+        <div class="image-caption">Usability testing with a friend</div>
+        <p>The key change made after the usability testing was to provide explanation as to why the phone number was needed – some people were uncomfortable with providing this information.</p>
+
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">Branding customisation</h2>
+
+        <p>Finally, I had to make sure that the visual design can accomodate different branding, as this app was to be used by different gyms.</p>
+        <p>I created a set of guidelines to make sure that different colour schemes could be applied to the app, while keeping text accessible and maintaining the app‘s visual identity.</p>
+
+        <LazyImage id="branding-img-container" placeholderId="branding-img-placeholder" class="image--medium" large={img12} placeholder={img13} alt="Branding for different gyms" ratio="66.89%" />
+
+    </div>
+    <div class="sub-section__content sub-section--last-in-section">
+        <h2 class="h2-heading">The outcome</h2>
+
+        <p>The app was finished in May 2016 and has been rolled out to over a thousand gyms around the USA, Canada and the UK.</p>
+        <p>A further sign of success was that the major client, Snap Fitness, requested for the app to be extended to cover their entire member signup process.</p>
+    </div>
+    <div class="section section--medium section--nav">
+      <div class="sub-section__content sub-section--last-in-section">
+        <a class="link link--on-light-bg link--case-study-nav" href="/vedrans_design_work#VisitorRegistrationApp">Back to ‘My work’</a>
+        <a class="link link--on-light-bg link--inline" href="/case_study--design_sprint">Next case study</a>
+      </div>
+    </div>
+  </div>
+
+</BaseLayout>

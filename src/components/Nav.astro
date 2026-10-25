@@ -1,0 +1,36 @@
+---
+/**
+ * Top navigation. It sits on the page's top background colour, and turns
+ * white with a shadow once the page scrolls (see scripts/sticky-nav.js).
+ *
+ * Whitespace matters here: the gaps between the inline-block items are part
+ * of the design, so each <li> is written on one line with a newline after it.
+ */
+export type NavItem = 'home' | 'about' | 'work';
+export type NavBackground = 'medium-gray' | 'light-gray' | 'white';
+
+interface Props {
+  current?: NavItem;
+  background: NavBackground;
+}
+
+const { current, background } = Astro.props;
+const bgClass = { 'medium-gray': '', 'light-gray': 'nav--on-light-bg', white: 'nav--on-white-bg' }[background];
+const items: { id: NavItem; href: string; label: string }[] = [
+  { id: 'home', href: '/', label: 'Home' },
+  { id: 'about', href: '/about_vedran', label: 'About me' },
+  { id: 'work', href: '/vedrans_design_work', label: 'My work' },
+];
+---
+
+<nav class:list={['nav', bgClass, 'noselect']} id="nav" data-bg-class={bgClass}>
+  <ul class="nav__list">
+    {items.map((item) => (
+      <Fragment><li class:list={['nav__item', { 'nav__item--selected': item.id === current }]}><a href={item.href} aria-current={item.id === current ? 'page' : undefined}>{item.label}</a></li>{'\n'}</Fragment>
+    ))}
+  </ul>
+</nav>
+
+<script>
+  import '../scripts/sticky-nav.js';
+</script>

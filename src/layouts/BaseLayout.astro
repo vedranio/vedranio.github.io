@@ -1,0 +1,56 @@
+---
+/**
+ * Shared page shell: <head>, sticky nav and footer. Pages pass their title,
+ * optional description, which nav item is current, and the nav background
+ * that matches the top of the page.
+ */
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto-mono/400.css';
+import '@fontsource/roboto-mono/500.css';
+import '@fontsource/roboto-mono/700.css';
+import '../styles/app.css';
+import robotoLatin from '@fontsource/roboto/files/roboto-latin-400-normal.woff2?url';
+import robotoMonoLatin from '@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff2?url';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import type { NavBackground, NavItem } from '../components/Nav.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Which nav item is highlighted. */
+  current?: NavItem;
+  /** Background colour behind the nav before the page is scrolled. */
+  navBg?: NavBackground;
+  /** The 404 page has no nav or footer. */
+  chrome?: boolean;
+  /** LinkedIn URL in the footer (some pages still use the old profile URL). */
+  footerLinkedIn?: string;
+}
+
+const { title, description, current, navBg = 'light-gray', chrome = true, footerLinkedIn } = Astro.props;
+const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/'), Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    <link rel="preload" href={robotoLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={robotoMonoLatin} as="font" type="font/woff2" crossorigin />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot name="top" />
+    {chrome && <Nav current={current} background={navBg} />}
+    <slot />
+    {chrome && <Footer linkedIn={footerLinkedIn} />}
+    <slot name="end" />
+  </body>
+</html>

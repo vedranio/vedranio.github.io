@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LazyImage from '../components/LazyImage.astro';
+import img0 from '../assets/images/vedran_speaking_at_meetup.jpg';
+import img1 from '../assets/images/vedran_speaking_at_meetup_PLACEHOLDER.jpg';
+import img2 from '../assets/images/family.JPG';
+import img3 from '../assets/images/family_PLACEHOLDER.JPG';
+
+const structuredData0 = `{
+				"@context": [
+						"http://schema.org/"
+				],
+				"@id": "http://vedran.io",
+				"@type": "Person",
+				"name": "Vedran Arnautovic",
+				"address": "Melbourne, Australia",
+				"homeLocation": "Melbourne, Australia",
+				"jobTitle": "Director of Product Design",
+				"workLocation": "Melbourne, Australia",
+				"worksFor": "Airwallex",
+				"description": "Designer leader with over 20 years’ experience, focusing on design leadership, product design, user experience design, design systems.",
+				"Nationality": "Australia",
+				"birthPlace": "Sarajevo",
+				"colleague": "https://au.linkedin.com/in/cameronrogers",
+				"alumniOf": "Melbourne University",
+				"url": "http://vedran.io",
+				"image": "http://vedran.io/resources/images/vedran_profile_pic.JPG",
+				"sameAs": [
+						"http://github.com/vedranio",
+						"http://www.linkedin.com/in/vedran-arnautovic-design",
+						"http://medium.com/@vedranio"
+				]
+			}`;
+---
+
+<BaseLayout title="Vedran Arnautovic | Product design and user experience leader in Melbourne" navBg="white" current="about" footerLinkedIn="https://www.linkedin.com/in/vedran-arnautovic-716a1b128">
+  {/* ABOUT ME */}
+  <div class="section">
+    <div class="section__content section--top-of-page section--last-in-section">
+      <h1 class="h1-heading">About me</h1>
+        <p>I am a design leader with over 20 years experience. During my career, I have focused on user experience, product design, design systems, and growing high functioning design teams.</p>
+        <p>I am currently working as a Director of Product Design, building and leading a global team of designers at <a class="link link--on-light-bg link--inline" target="_blank" href="https://www.airwallex.com">Airwallex</a>.</p>
+
+    </div>
+  </div>
+  <LazyImage id="speaking-img-container" placeholderId="speaking-img-placeholder" class="image--full-width" large={img0} placeholder={img1} alt="Vedran speaking at Sarajevo UX meetup" ratio="41.56%" />
+
+  <div class="section section--light ">
+    <div class="sub-section__content sub-section--first-in-section">
+        <h2 class="h2-heading">Technical beginnings</h2>
+
+        <p>After graduating from Engineering (Mechatronics) and Computer Science in 2003, I started my career as a System Design Engineer working on automated cancer diagnostics instruments. I developed a passion for observing how people interact with the machines, systems and software that I designed.</p>
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">A turning point</h2>
+
+        <p>A career shaping event was an opportunity to spend two years working with <a class="link link--on-light-bg link--inline" target="_blank" href="https://www.leica-microsystems.com/">Leica Microsystems</a> in the UK and across Europe, studying how medical staff use cancer diagnostic instruments, how engineers service those instruments and helping both groups improve their processes.</p>
+
+        <p>That was in 2007. That passion for observing how people interact with products and using those observations to design better experiences, lives on in me and is the key reason why I love what I do.</p>
+
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">Honing my craft</h2>
+
+        <p>I spent the period between 2010 and 2019 honing my skills as a user experience, interaction, and product designer. I thrived and developed the most during my time at <a class="link link--on-light-bg link--inline" target="_blank" href="https://www.seek.com.au/">SEEK</a> and <a class="link link--on-light-bg link--inline" target="_blank" href="https://www.zendesk.com/">Zendesk</a> where I was able to learn from passionate and talented designers, researchers, and design leaders who had the utmost care for making products that improved their customers' lives.</p>
+
+        <p>Working on complex products gave me an appreciation for design systems, and the power they have in making software more consistent, usable, and more efficient to build. I have made contributions to design systems at both <a class="link link--on-light-bg link--inline" target="_blank" href="https://seek-oss.github.io/braid-design-system/">SEEK</a> and <a class="link link--on-light-bg link--inline" target="_blank" href="https://garden.zendesk.com/">Zendesk</a>, and have initiated the first “satellite” design system at Zendesk.</p>
+
+    </div>
+    <div class="sub-section__content sub-section--last-in-section">
+        <h2 class="h2-heading">My focus today</h2>
+
+        <p>Since 2019, I’ve focused on nurturing individual designers and growing design teams that deliver customer value through powerful enterprise grade SaaS software.</p>
+
+        <p>Between 2019 and 2023, I built and led a global design team at Zendesk across US, Europe, Singapore and Australia responsible for the Zendesk Admin Experience.</p>
+
+        <p>From 2023 to 2026, I led the design team at Canva, responsible for Canva’s enterprise push, building the controls, permissions and features the world’s biggest enterprises (eg. Amazon, Disney) need to get the most out of Canva.</p>
+
+        <p>Currently, I am leading a global design team at Airwallex, responsible for our Business Accounts product.</p>
+
+    </div>
+  </div>
+  <LazyImage id="family-img-container" placeholderId="family-img-placeholder" class="image--full-width" large={img2} placeholder={img3} alt="Vedran and family" ratio="66.36%" />
+
+
+  <script is:inline slot="end" type="application/ld+json" set:html={structuredData0} />
+</BaseLayout>

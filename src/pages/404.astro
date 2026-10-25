@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 – page not found" chrome={false}>
+  <script is:inline slot="head">
+    // Single-page apps under this site have routes GitHub Pages knows nothing about
+    // (for example /pizza-nerd/recipe). Hand such a path back to the app's index page,
+    // which restores the route itself. Everything else gets the normal 404 below.
+    (function () {
+      var apps = ['/pizza-nerd/'];
+      var path = window.location.pathname;
+      for (var i = 0; i < apps.length; i++) {
+        if (path.indexOf(apps[i]) === 0 && path !== apps[i]) {
+          var route = path.slice(apps[i].length - 1);
+          window.location.replace(apps[i] + '?p=' + encodeURIComponent(route) + window.location.hash);
+          return;
+        }
+      }
+    })();
+  </script>
+
+  <div class="section section--medium">
+    <div class="section__content section__content--allow-wide">
+      <h1 class="h1-heading--hero text-flicker-in-glow">404</h1>
+    </div>
+  </div>
+  <div class="section section--light">
+    <div class="section__content section__content--allow-wide">
+      <h2 class="h2-heading">You look lost</h2>
+      <p>Here are some places you might want to <span class="nobr">go instead...</span></p>
+    </div>
+  </div>
+
+  <div class="section section--light section--last-in-section">
+    <div class="sub-section__content sub-section--last-in-section">
+      <p><a class="link link--on-light-bg" href="javascript:history.back()">Last page you visited</a></p>
+      <p><a class="link link--on-light-bg" href="/">vedran.io homepage</a></p>
+      <p><a class="link link--on-light-bg" target="_blank" href="http://www.creativebloq.com/web-design/best-404-pages-812505">See some well designed 404 pages</a></p>
+    </div>
+  </div>
+</BaseLayout>

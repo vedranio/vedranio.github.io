@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BrowserWarning from '../components/BrowserWarning.astro';
+
+const description = 'Vedran Arnautovic is a user experience and product design leader based in Melbourne.';
+const keywords =
+  'Design leadership, design strategy, product design, UX, UX Design, UXD, user experience design, interaction design, designer, prototyping, wireframing, workshop, user research, usability testing, portfolio, resume, cv, online portfolio, IxD, user centred design, vedran arnautovic, vedranio, thatbalduxguy, ux designer, interaction designer';
+const ogImage = 'https://www.vedran.io/resources/images/vedran_speaking_at_meetup.jpg';
+
+// Structured data for search engines, kept exactly as before.
+const structuredData0 = `{
+		    "@context": [
+		        "http://schema.org/"
+		    ],
+		    "@id": "http://vedran.io",
+		    "@type": "WebSite",
+		    "about": "Personal profile and UX Desgin portfolio for Vedran Arnautovic",
+				"accessMode": "textual, visual",
+				"accessModeSufficient": "textual, visual",
+				"accountablePerson": "Vedran Arnautovic",
+				"alternativeHeadline": "Vedran Arnautovic – user experience designer",
+				"author": "Vedran Arnautovic",
+				"copyrightHolder": "Vedran Arnautovic",
+				"keywords": "design, ux design, user experience design, interaction design, accessibilty, usability design, user research, interface design, vedranio, vedran, arnautovic, vedran arnautovic, portfolio",
+				"thumbnailUrl": "resources/images/headshot.png",
+				"url": "http://vedran.io",
+		    "image": "http://vedran.io/resources/images/vedran_profile_pic.JPG"
+			}`;
+const structuredData1 = `{
+		    "@context": [
+		        "http://schema.org/"
+		    ],
+		    "@type": "Person",
+		    "name": "Vedran Arnautovic",
+				"address": "Melbourne, Australia",
+				"homeLocation": "Melbourne, Australia",
+				"jobTitle": "Director of Product Design",
+				"workLocation": "Melbourne, Australia",
+				"worksFor": "Airwallex",
+				"description": "Designer leader with over 20 years’ experience, focusing on design leadership, product design, user experience design, design systems.",
+				"Nationality": "Australia",
+				"birthPlace": "Sarajevo",
+				"colleague": "https://au.linkedin.com/in/cameronrogers",
+				"colleague": "https://www.linkedin.com/in/mkawano/",
+				"colleague": "https://www.linkedin.com/in/nicktarantogrimes/",
+				"colleague": "https://www.linkedin.com/in/rhett-luciani/",
+				"colleague": "https://www.linkedin.com/in/kimlenox/",
+				"alumniOf": "Melbourne University",
+		    "url": "http://vedran.io",
+		    "image": "http://vedran.io/resources/images/vedran_profile_pic.JPG",
+		    "sameAs": [
+						"http://github.com/vedranio",
+						"http://www.linkedin.com/in/vedran-arnautovic-design",
+		        "http://medium.com/@vedranio"
+		    ]
+			}`;
+---
+
+<BaseLayout title="Vedran Arnautovic | Design leader in Melbourne" description={description} navBg="medium-gray" current="home">
+  <Fragment slot="head">
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Vedran Arnautovic" />
+    <meta name="copyright" content="Vedran Arnautovic" />
+
+    {/* Facebook OpenGraph */}
+    <meta property="og:title" content="Vedran Arnautovic | User Experience and Product Design Leader in Melbourne" />
+    <meta property="og:type" content="portfolio website" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content="https://www.vedran.io/" />
+    <meta property="og:description" content="This is a personal portfolio site for Vedran Arnautovic, a user experience and product design leader based in Melbourne." />
+
+    {/* Twitter Cards */}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Vedran Arnautovic | User Experience and Product Design Leader based in Melbourne" />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    {/* Google Analytics (Universal Analytics) */}
+    <script is:inline async>
+      /* global ga */
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-84060845-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </Fragment>
+
+  <BrowserWarning slot="top" />
+
+  <div class="header--extra-pading"></div>
+
+  {/* HEADER */}
+    <header class="header section--top-of-page">
+        <div class="header__content">
+          <div class="header__image"></div>
+          <div class="intro">
+            <div class="intro__content">
+              <h1 class="h2-heading">Hello, I’m Vedran</h1>
+              <p>I am a Director of Product Design at Airwallex</p>
+              <a class="link link__about-me" href="/about_vedran">More about me</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      {/* MY WORK */}
+      <div class="section section--light section--first-in-section">
+        <div class="section__content">
+          <h2 class="h2-heading">My work</h2>
+            <p class="paragraph__home">In 2019 my focus shifted from hands-on design to building and leading design teams.</p>
+            <p class="paragraph__home">To see my professional work and design leadership case-studies, please connect via <a class="link link--on-light-bg link--inline" target="_blank" href="https://www.linkedin.com/in/vedran-arnautovic-design">LinkedIn</a>.</p>
+          <a class="link link--on-light-bg" href="/vedrans_design_work">Explore my side projects</a>
+        </div>
+      </div>
+      {/* WRITING */}
+      <div class="section section--light">
+        <div class="section__content">
+          <h2 class="h2-heading">Writing</h2>
+            <p class="paragraph__home">Writing about design is a big part of my self-development. It helps me improve by questioning my own beliefs, sharing knowledge and creating dialogue.</p>
+          <a class="link link--on-light-bg" href="http://medium.com/@vedranio" target="b">Read my posts on Medium</a>
+        </div>
+      </div>
+      {/* MY RESUME */}
+      <div class="section section--light section--last-in-section">
+        <div class="section__content">
+          <h2 class="h2-heading">My resumé</h2>
+            <p class="paragraph__home">You can find out about more my experience on <a class="link link--on-light-bg link--inline" target="_blank" href="https://www.linkedin.com/in/vedran-arnautovic-design">LinkedIn</a>, but if you're after a more traditional resumé, you can access it below.</p>
+          <a class="link link--on-light-bg" href="/resources/documents/Vedran-Arnautovic-Resume.pdf" target="_blank">View my resumé (pdf)</a>
+        </div>
+      </div>
+
+
+
+  <Fragment slot="end">
+    <div class="tota11y">
+      <script is:inline src="/js/tota11y.min.js"></script>
+    </div>
+    <script is:inline type="application/ld+json" set:html={structuredData0} />
+    <script is:inline type="application/ld+json" set:html={structuredData1} />
+  </Fragment>
+</BaseLayout>

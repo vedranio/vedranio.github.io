@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LazyImage from '../components/LazyImage.astro';
+import img0 from '../assets/images/walnut_example.jpg';
+import img1 from '../assets/images/walnut_example_PLACEHOLDER.jpg';
+---
+
+<BaseLayout title="Walnut artwork visualisation iOS app | by Vedran Arnautovic" navBg="light-gray" current="work" footerLinkedIn="https://www.linkedin.com/in/vedran-arnautovic-716a1b128">
+  <div class="section section--medium">
+    <div class="section__content section--top-of-page section--last-in-section section__content--allow-wide">
+      <h1 class="h1-heading">Walnut <span class="nobr">iOS app</span></h1>
+        <p>Walnut allowed people to visualise an artwork on their wall, before buying it.</p>
+        <p>The app is no longer available on the App Store.</p>
+    </div>
+  </div>
+
+  <div class="section section--light ">
+    <div class="sub-section__content sub-section--first-in-section">
+        <h2 class="h2-heading">About the project</h2>
+
+        <p>I designed, built and marketed Walnut with two friends. We registered it as a business and actually made some decent money from it.</p>
+        <p>That was in 2011. For a long time, it has the most accurate perspective artwork visulisation of any similar apps. That was until AR kit and similar technology came along.</p>
+        <br>
+
+        <LazyImage id="walnut-img-container" placeholderId="walnut-img-placeholder" class="image--medium" large={img0} placeholder={img1} alt="Walnut app in action" ratio="42.11%" />
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">My motivation</h2>
+
+        <p>I partially built Walnut for the wrong reasons. I wanted to learn iOS dev and wanted to build an app. In reality, I didn't really care whether I was solving a problem worth solving, I just wanted to build an app (because that was a cool thing to do at the time).</p>
+
+    </div>
+    <div class="sub-section__content">
+        <h2 class="h2-heading">What I learnt</h2>
+
+        <p>I could write a lot on the things I learnt about launching a start-up, developing a business and managing clients, but I won't do that here. If we end up talking, I'm happy to go through it.</p>
+        <p>The most valuable lesson was that you should never enter into a venture with other people if you don't have the same goals in mind.</p>
+        <p>While I am proud of some of the early product validation work we did, including guerilla testing at art shows, we could have done a lot more to test whether people were willing to <strong>actually pay</strong> for the service.</p>
+    </div>
+
+    <div class="sub-section__content sub-section--last-in-section">
+        <h2 class="h2-heading">Current status</h2>
+
+        <p>We've disolved the business and retired the website, and the app is no longer available for download.</p>
+    </div>
+    <div class="section section--medium section--nav">
+      <div class="sub-section__content sub-section--last-in-section">
+        <a class="link link--on-light-bg link--case-study-nav" href="/vedrans_design_work#SideProjects">Back to ‘My work’</a>
+      </div>
+    </div>
+  </div>
+
+</BaseLayout>

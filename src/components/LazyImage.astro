@@ -1,0 +1,57 @@
+---
+/**
+ * The site's blur-up image: a tiny blurred placeholder shows first, then the
+ * full image fades in over it once loaded (see scripts/lazy-images.js).
+ *
+ * The full image is optimised at build time: resized WebP versions in a
+ * srcset (animated GIFs are left as they are), and it is only fetched when
+ * it nears the viewport.
+ */
+import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
+
+interface Props {
+  id: string;
+  placeholderId: string;
+  /** Layout classes for the container, e.g. "image--medium image--with-caption". */
+  class?: string;
+  large: ImageMetadata;
+  placeholder: ImageMetadata;
+  alt: string;
+  /** Aspect ratio box, as the padding-bottom percentage, e.g. "64.55%". */
+  ratio: string;
+  /** Extra class added to the full image once loaded (e.g. a drop shadow). */
+  shadow?: string;
+}
+
+const { id, placeholderId, class: className, large, placeholder, alt, ratio, shadow } = Astro.props;
+
+let src = large.src;
+let srcset: string | undefined;
+if (large.format !== 'gif') {
+  const widths = [480, 800, 1200, 1600, 2400].filter((w) => w < large.width);
+  widths.push(large.width);
+  const optimised = await getImage({ src: large, format: 'webp', quality: 80, widths });
+  src = optimised.src;
+  srcset = optimised.srcSet.attribute;
+}
+---
+
+<div
+  id={id}
+  class:list={[className, 'placeholder']}
+  data-large={src}
+  data-srcset={srcset}
+  data-alt={alt}
+  data-shadow={shadow}
+>
+  <img id={placeholderId} class="img-small" src={placeholder.src} alt="" />
+  <div style={`padding-bottom: ${ratio};`}></div>
+  <noscript>
+    <img class:list={['loaded', shadow]} src={src} srcset={srcset} alt={alt} />
+  </noscript>
+</div>
+
+<script>
+  import '../scripts/lazy-images.js';
+</script>
